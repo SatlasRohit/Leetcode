@@ -31,6 +31,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0013-roman-to-integer](https://github.com/SatlasRohit/Leetcode/tree/master/0013-roman-to-integer) |
 | [0014-longest-common-prefix](https://github.com/SatlasRohit/Leetcode/tree/master/0014-longest-common-prefix) |
 | [0020-valid-parentheses](https://github.com/SatlasRohit/Leetcode/tree/master/0020-valid-parentheses) |
 | [1935-maximum-number-of-words-you-can-type](https://github.com/SatlasRohit/Leetcode/tree/master/1935-maximum-number-of-words-you-can-type) |
@@ -55,6 +56,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Hash Table
 |  |
 | ------- |
+| [0013-roman-to-integer](https://github.com/SatlasRohit/Leetcode/tree/master/0013-roman-to-integer) |
 | [0141-linked-list-cycle](https://github.com/SatlasRohit/Leetcode/tree/master/0141-linked-list-cycle) |
 | [1935-maximum-number-of-words-you-can-type](https://github.com/SatlasRohit/Leetcode/tree/master/1935-maximum-number-of-words-you-can-type) |
 | [2099-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/SatlasRohit/Leetcode/tree/master/2099-find-subsequence-of-length-k-with-the-largest-sum) |
@@ -82,5 +84,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/SatlasRohit/Leetcode/tree/master/0002-add-two-numbers) |
+| [0013-roman-to-integer](https://github.com/SatlasRohit/Leetcode/tree/master/0013-roman-to-integer) |
 | [2235-add-two-integers](https://github.com/SatlasRohit/Leetcode/tree/master/2235-add-two-integers) |
 <!---LeetCode Topics End-->
