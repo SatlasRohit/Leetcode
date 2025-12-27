@@ -11,6 +11,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/SatlasRohit/Leetcode/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
 | [0485-max-consecutive-ones](https://github.com/SatlasRohit/Leetcode/tree/master/0485-max-consecutive-ones) |
 | [0561-array-partition](https://github.com/SatlasRohit/Leetcode/tree/master/0561-array-partition) |
+| [0636-exclusive-time-of-functions](https://github.com/SatlasRohit/Leetcode/tree/master/0636-exclusive-time-of-functions) |
 | [0896-monotonic-array](https://github.com/SatlasRohit/Leetcode/tree/master/0896-monotonic-array) |
 | [1441-build-an-array-with-stack-operations](https://github.com/SatlasRohit/Leetcode/tree/master/1441-build-an-array-with-stack-operations) |
 | [1470-shuffle-the-array](https://github.com/SatlasRohit/Leetcode/tree/master/1470-shuffle-the-array) |
@@ -47,6 +48,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0020-valid-parentheses](https://github.com/SatlasRohit/Leetcode/tree/master/0020-valid-parentheses) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/SatlasRohit/Leetcode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0225-implement-stack-using-queues](https://github.com/SatlasRohit/Leetcode/tree/master/0225-implement-stack-using-queues) |
+| [0636-exclusive-time-of-functions](https://github.com/SatlasRohit/Leetcode/tree/master/0636-exclusive-time-of-functions) |
 | [1441-build-an-array-with-stack-operations](https://github.com/SatlasRohit/Leetcode/tree/master/1441-build-an-array-with-stack-operations) |
 ## Greedy
 |  |
