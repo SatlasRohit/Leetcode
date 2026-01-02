@@ -1,12 +1,16 @@
 class Solution {
     public int repeatedNTimes(int[] nums) {
-        HashSet<Integer> uni=new HashSet<>();
-        for(int i=0;i<nums.length;i++){
-            if(uni.contains(nums[i])){
+        int[] count=new int[100001];
+        // Compare first element with others
+        for (int i = 0; i < nums.length; i++) {
+            count[nums[i]]++;
+            if(count[nums[i]]>1){
                 return nums[i];
             }
-            uni.add(nums[i]);
         }
-        return 0;
+
+        // If first element is not the repeated one,
+        // then the repeated element must be among the rest
+        return nums[1];
     }
 }
