@@ -17,9 +17,7 @@ class Solution {
         if(flag==1){
             rev*=-1;
         }
-        if(rev>Integer.MAX_VALUE && rev<Integer.MIN_VALUE){
-            return 0;
-        }
+        
         return (int) rev;
     }
 }
