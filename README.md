@@ -7,6 +7,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0001-two-sum](https://github.com/SatlasRohit/Leetcode/tree/master/0001-two-sum) |
 | [0014-longest-common-prefix](https://github.com/SatlasRohit/Leetcode/tree/master/0014-longest-common-prefix) |
 | [0031-next-permutation](https://github.com/SatlasRohit/Leetcode/tree/master/0031-next-permutation) |
+| [0053-maximum-subarray](https://github.com/SatlasRohit/Leetcode/tree/master/0053-maximum-subarray) |
 | [0066-plus-one](https://github.com/SatlasRohit/Leetcode/tree/master/0066-plus-one) |
 | [0073-set-matrix-zeroes](https://github.com/SatlasRohit/Leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0118-pascals-triangle](https://github.com/SatlasRohit/Leetcode/tree/master/0118-pascals-triangle) |
@@ -117,6 +118,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Divide and Conquer
 |  |
 | ------- |
+| [0053-maximum-subarray](https://github.com/SatlasRohit/Leetcode/tree/master/0053-maximum-subarray) |
 | [0190-reverse-bits](https://github.com/SatlasRohit/Leetcode/tree/master/0190-reverse-bits) |
 | [0191-number-of-1-bits](https://github.com/SatlasRohit/Leetcode/tree/master/0191-number-of-1-bits) |
 ## Bit Manipulation
@@ -131,6 +133,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0053-maximum-subarray](https://github.com/SatlasRohit/Leetcode/tree/master/0053-maximum-subarray) |
 | [0118-pascals-triangle](https://github.com/SatlasRohit/Leetcode/tree/master/0118-pascals-triangle) |
 | [1411-number-of-ways-to-paint-n-3-grid](https://github.com/SatlasRohit/Leetcode/tree/master/1411-number-of-ways-to-paint-n-3-grid) |
 <!---LeetCode Topics End-->
