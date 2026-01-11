@@ -10,6 +10,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0053-maximum-subarray](https://github.com/SatlasRohit/Leetcode/tree/master/0053-maximum-subarray) |
 | [0066-plus-one](https://github.com/SatlasRohit/Leetcode/tree/master/0066-plus-one) |
 | [0073-set-matrix-zeroes](https://github.com/SatlasRohit/Leetcode/tree/master/0073-set-matrix-zeroes) |
+| [0075-sort-colors](https://github.com/SatlasRohit/Leetcode/tree/master/0075-sort-colors) |
 | [0118-pascals-triangle](https://github.com/SatlasRohit/Leetcode/tree/master/0118-pascals-triangle) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/SatlasRohit/Leetcode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0189-rotate-array](https://github.com/SatlasRohit/Leetcode/tree/master/0189-rotate-array) |
@@ -64,6 +65,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [0075-sort-colors](https://github.com/SatlasRohit/Leetcode/tree/master/0075-sort-colors) |
 | [0561-array-partition](https://github.com/SatlasRohit/Leetcode/tree/master/0561-array-partition) |
 | [2099-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/SatlasRohit/Leetcode/tree/master/2099-find-subsequence-of-length-k-with-the-largest-sum) |
 ## Counting Sort
@@ -97,6 +99,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0031-next-permutation](https://github.com/SatlasRohit/Leetcode/tree/master/0031-next-permutation) |
+| [0075-sort-colors](https://github.com/SatlasRohit/Leetcode/tree/master/0075-sort-colors) |
 | [0141-linked-list-cycle](https://github.com/SatlasRohit/Leetcode/tree/master/0141-linked-list-cycle) |
 | [0189-rotate-array](https://github.com/SatlasRohit/Leetcode/tree/master/0189-rotate-array) |
 ## Heap (Priority Queue)
