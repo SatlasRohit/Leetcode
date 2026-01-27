@@ -3,38 +3,34 @@ import java.util.*;
 class Solution {
     public int[][] merge(int[][] intervals) {
 
-        // Edge case
-        if (intervals == null || intervals.length <= 1)
+        if (intervals.length <= 1)
             return intervals;
 
-        // 1️⃣ Sort intervals by start time
-        Arrays.sort(intervals, (a, b) -> a[0] - b[0]);
-
-        ArrayList<int[]> merged = new ArrayList<>();
-
-        // 2️⃣ Initialize with first interval
-        int start = intervals[0][0];
-        int end   = intervals[0][1];
-
-        // 3️⃣ Traverse and merge
-        for (int i = 1; i < intervals.length; i++) {
-
-            // Overlapping intervals
-            if (intervals[i][0] <= end) {
-                end = Math.max(end, intervals[i][1]);
+        // Faster than lambda comparator
+        Arrays.sort(intervals, new Comparator<int[]>() {
+            public int compare(int[] a, int[] b) {
+                return a[0] - b[0];
             }
-            // Non-overlapping interval
-            else {
-                merged.add(new int[]{start, end});
-                start = intervals[i][0];
-                end   = intervals[i][1];
+        });
+
+        int n = intervals.length;
+        int[][] res = new int[n][2];
+        int idx = 0;
+
+        res[0][0] = intervals[0][0];
+        res[0][1] = intervals[0][1];
+
+        for (int i = 1; i < n; i++) {
+            if (intervals[i][0] <= res[idx][1]) {
+                // merge
+                res[idx][1] = Math.max(res[idx][1], intervals[i][1]);
+            } else {
+                idx++;
+                res[idx][0] = intervals[i][0];
+                res[idx][1] = intervals[i][1];
             }
         }
 
-        // Add the last interval
-        merged.add(new int[]{start, end});
-
-        // 4️⃣ Convert ArrayList to 2D array
-        return merged.toArray(new int[merged.size()][]);
+        return Arrays.copyOf(res, idx + 1);
     }
 }
