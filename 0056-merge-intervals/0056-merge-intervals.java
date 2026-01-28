@@ -1,23 +1,38 @@
-class Solution {
-    public int[][] merge(int[][] arr) {
-        Arrays.sort(arr, (a, b) -> a[0] - b[0]);
-        int i=1,j=0;
-        while(i<arr.length){
-            if(arr[i][0]<=arr[j][1])arr[j][1]=Math.max(arr[i][1],arr[j][1]);
-            else{
+import java.util.*;
 
-                j++;
-                arr[j][0]=arr[i][0];
-                arr[j][1]=arr[i][1];
-            } 
-              i++;  
+class Solution {
+    public int[][] merge(int[][] intervals) {
+
+        if (intervals.length <= 1)
+            return intervals;
+
+        // Faster than lambda comparator
+        Arrays.sort(intervals, new Comparator<int[]>() {
+            public int compare(int[] a, int[] b) {
+                return a[0] - b[0];
+            }
+        });
+
+        int n = intervals.length;
+        int[][] res = new int[n][2];
+        int idx = 0;
+
+        res[0][0] = intervals[0][0];
+        res[0][1] = intervals[0][1];
+
+        for (int i = 1; i < n; i++) {
+            if (intervals[i][0] <= res[idx][1]) {
+                // merge
+                if (intervals[i][1] > res[idx][1]) {
+                    res[idx][1] = intervals[i][1];
+                }
+            } else {
+                idx++;
+                res[idx][0] = intervals[i][0];
+                res[idx][1] = intervals[i][1];
+            }
         }
-        int res[][]=new int[j+1][2];
-        for(i=0; i<=j; i++){
-res[i][0]=arr[i][0];
-res[i][1]=arr[i][1];
-        }
-        return res;
+
+        return Arrays.copyOf(res, idx + 1);
     }
-    
 }
