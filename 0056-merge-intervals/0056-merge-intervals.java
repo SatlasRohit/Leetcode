@@ -1,33 +1,28 @@
 class Solution {
     public int[][] merge(int[][] intervals) {
-		int min = Integer.MAX_VALUE;
-		int max = Integer.MIN_VALUE;
-		
-		for (int i = 0; i < intervals.length; i++) {
-			min = Math.min(min, intervals[i][0]);
-			max = Math.max(max, intervals[i][0]);
-		}
-		
-		int[] range = new int[max - min + 1];
-		for (int i = 0; i < intervals.length; i++) {
-			range[intervals[i][0] - min] = Math.max(intervals[i][1] - min, range[intervals[i][0] - min]); 
-		}
-		
-		int start = 0, end = 0;
-		LinkedList<int[]> result = new LinkedList<>();
-		for (int i = 0; i < range.length; i++) {
-			if (range[i] == 0) {
-				continue;
-			}
-			if (i <= end) {
-				end = Math.max(range[i], end);
-			} else {
-				result.add(new int[] {start + min, end + min});
-				start = i;
-				end = range[i];
-			}
-		}
-		result.add(new int[] {start + min, end + min});
-		return result.toArray(new int[result.size()][]);
-	}
+
+        if (intervals.length == 0) return intervals;
+
+        Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
+
+        ArrayList<int[]> merge = new ArrayList<>();
+
+        int start = intervals[0][0];
+        int end   = intervals[0][1];
+
+        for (int i = 1; i < intervals.length; i++) {
+
+            if (intervals[i][0] <= end) {
+                end = Math.max(end, intervals[i][1]);
+            } else {
+                merge.add(new int[]{start, end});
+                start = intervals[i][0];
+                end   = intervals[i][1];
+            }
+        }
+
+        merge.add(new int[]{start, end});
+
+        return merge.toArray(new int[merge.size()][]);
+    }
 }
