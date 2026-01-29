@@ -14,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0066-plus-one](https://github.com/SatlasRohit/Leetcode/tree/master/0066-plus-one) |
 | [0073-set-matrix-zeroes](https://github.com/SatlasRohit/Leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0075-sort-colors](https://github.com/SatlasRohit/Leetcode/tree/master/0075-sort-colors) |
+| [0088-merge-sorted-array](https://github.com/SatlasRohit/Leetcode/tree/master/0088-merge-sorted-array) |
 | [0118-pascals-triangle](https://github.com/SatlasRohit/Leetcode/tree/master/0118-pascals-triangle) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/SatlasRohit/Leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/SatlasRohit/Leetcode/tree/master/0150-evaluate-reverse-polish-notation) |
@@ -74,6 +75,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0056-merge-intervals](https://github.com/SatlasRohit/Leetcode/tree/master/0056-merge-intervals) |
 | [0075-sort-colors](https://github.com/SatlasRohit/Leetcode/tree/master/0075-sort-colors) |
+| [0088-merge-sorted-array](https://github.com/SatlasRohit/Leetcode/tree/master/0088-merge-sorted-array) |
 | [0561-array-partition](https://github.com/SatlasRohit/Leetcode/tree/master/0561-array-partition) |
 | [2099-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/SatlasRohit/Leetcode/tree/master/2099-find-subsequence-of-length-k-with-the-largest-sum) |
 ## Counting Sort
@@ -110,6 +112,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0026-remove-duplicates-from-sorted-array](https://github.com/SatlasRohit/Leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0031-next-permutation](https://github.com/SatlasRohit/Leetcode/tree/master/0031-next-permutation) |
 | [0075-sort-colors](https://github.com/SatlasRohit/Leetcode/tree/master/0075-sort-colors) |
+| [0088-merge-sorted-array](https://github.com/SatlasRohit/Leetcode/tree/master/0088-merge-sorted-array) |
 | [0141-linked-list-cycle](https://github.com/SatlasRohit/Leetcode/tree/master/0141-linked-list-cycle) |
 | [0189-rotate-array](https://github.com/SatlasRohit/Leetcode/tree/master/0189-rotate-array) |
 ## Heap (Priority Queue)
