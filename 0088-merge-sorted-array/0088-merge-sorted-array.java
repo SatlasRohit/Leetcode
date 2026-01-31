@@ -12,14 +12,13 @@ class Solution {
                 } else {
                     merge[i] = nums2[k++];
                 }
-            } else if (j < m) {
+            } else if (k>=n) {
                 merge[i] = nums1[j++];
             } else {
                 merge[i] = nums2[k++];
             }
         }
 
-        // 🔑 THIS is what you were missing
         for (int i = 0; i < m + n; i++) {
             nums1[i] = merge[i];
         }
