@@ -12,7 +12,7 @@ class Solution {
                 } else {
                     merge[i] = nums2[k++];
                 }
-            } else if (k>=n) {
+            } else if (j < m) {
                 merge[i] = nums1[j++];
             } else {
                 merge[i] = nums2[k++];
