@@ -13,19 +13,22 @@
  *     }
  * }
  */
-class Solution
-{
-    public TreeNode sortedArrayToBST(int[] nums)
-    {
-        return NewTree(nums,0,nums.length-1);
+class Solution {
+    public TreeNode sortedArrayToBST(int[] nums) {
+        return createBST(nums, 0, nums.length - 1);
     }
-    private TreeNode NewTree(int nums[], int l, int r)
-    {
-        if(l>r) return null;
-        int mid = l+(r-l) /2;
-        TreeNode root= new TreeNode(nums[mid]);
-        root.left = NewTree(nums, l, mid-1);
-        root.right = NewTree(nums, mid+1, r);
+
+    public TreeNode createBST(int[] nums, int s, int e){
+        if(s > e) return null;
+
+        int mid = (s + e)/2;
+
+        TreeNode root = new TreeNode(nums[mid]);
+
+        root.left = createBST(nums, s, mid-1);
+
+        root.right = createBST(nums, mid + 1, e);
+
         return root;
     }
 }
