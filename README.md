@@ -140,6 +140,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0066-plus-one](https://github.com/SatlasRohit/Leetcode/tree/master/0066-plus-one) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/SatlasRohit/Leetcode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0189-rotate-array](https://github.com/SatlasRohit/Leetcode/tree/master/0189-rotate-array) |
+| [0441-arranging-coins](https://github.com/SatlasRohit/Leetcode/tree/master/0441-arranging-coins) |
 | [1390-four-divisors](https://github.com/SatlasRohit/Leetcode/tree/master/1390-four-divisors) |
 | [2235-add-two-integers](https://github.com/SatlasRohit/Leetcode/tree/master/2235-add-two-integers) |
 ## Divide and Conquer
@@ -184,6 +185,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/SatlasRohit/Leetcode/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0349-intersection-of-two-arrays](https://github.com/SatlasRohit/Leetcode/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/SatlasRohit/Leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0441-arranging-coins](https://github.com/SatlasRohit/Leetcode/tree/master/0441-arranging-coins) |
 ## Binary Tree
 |  |
 | ------- |
