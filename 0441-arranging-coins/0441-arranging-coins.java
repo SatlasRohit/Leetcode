@@ -1,6 +1,5 @@
 class Solution {
     public int arrangeCoins(int n) {
-        long N = n; // to avoid overflow
-        return (int)((Math.sqrt(8 * N + 1) - 1) / 2);
+        return (int) (Math.sqrt(2) * Math.sqrt(n + 0.125) - 0.5);
     }
 }
