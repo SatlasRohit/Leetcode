@@ -1,19 +1,11 @@
 class Solution {
     public int arrangeCoins(int n) {
-        long left=1,right=n,ans=0;
-        while(left<=right){
-            long mid=left+(right-left)/2;
-            if(check(n,mid)){
-                left=mid+1;
-                ans=mid;
-            }else{
-                right=mid-1;
-            }
+        int i = 1, row = 0;
+        while (n >= i) {
+            n -= i;
+            i++;
+            row++;
         }
-        return (int)ans;
+        return row;
     }
-    public boolean check(int n, long m){
-        return (m*(m+1)/2)<=n;
-    }
-    
 }
