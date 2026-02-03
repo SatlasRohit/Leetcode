@@ -1,11 +1,6 @@
 class Solution {
     public int arrangeCoins(int n) {
-        int i = 1, row = 0;
-        while (n >= i) {
-            n -= i;
-            i++;
-            row++;
-        }
-        return row;
+        long N = n; // to avoid overflow
+        return (int)((Math.sqrt(8 * N + 1) - 1) / 2);
     }
 }
