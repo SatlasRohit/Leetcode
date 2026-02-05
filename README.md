@@ -34,6 +34,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1920-build-array-from-permutation](https://github.com/SatlasRohit/Leetcode/tree/master/1920-build-array-from-permutation) |
 | [1929-concatenation-of-array](https://github.com/SatlasRohit/Leetcode/tree/master/1929-concatenation-of-array) |
 | [2099-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/SatlasRohit/Leetcode/tree/master/2099-find-subsequence-of-length-k-with-the-largest-sum) |
+| [3379-transformed-array](https://github.com/SatlasRohit/Leetcode/tree/master/3379-transformed-array) |
 | [3507-minimum-pair-removal-to-sort-array-i](https://github.com/SatlasRohit/Leetcode/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
 | [3637-trionic-array-i](https://github.com/SatlasRohit/Leetcode/tree/master/3637-trionic-array-i) |
 ## Simulation
@@ -42,6 +43,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1441-build-an-array-with-stack-operations](https://github.com/SatlasRohit/Leetcode/tree/master/1441-build-an-array-with-stack-operations) |
 | [1920-build-array-from-permutation](https://github.com/SatlasRohit/Leetcode/tree/master/1920-build-array-from-permutation) |
 | [1929-concatenation-of-array](https://github.com/SatlasRohit/Leetcode/tree/master/1929-concatenation-of-array) |
+| [3379-transformed-array](https://github.com/SatlasRohit/Leetcode/tree/master/3379-transformed-array) |
 | [3507-minimum-pair-removal-to-sort-array-i](https://github.com/SatlasRohit/Leetcode/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
 ## Linked List
 |  |
