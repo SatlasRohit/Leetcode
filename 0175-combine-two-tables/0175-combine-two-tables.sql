@@ -1,4 +1,5 @@
-select FirstName, LastName, City, State
-from Person left join Address
-on Person.PersonId = Address.PersonId
-;
+/* Write your PL/SQL query statement below */
+select p.firstname, p.lastname, a.city, a.state
+from person p
+left outer join address a
+on p.personid = a.personid
