@@ -26,6 +26,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0485-max-consecutive-ones](https://github.com/SatlasRohit/Leetcode/tree/master/0485-max-consecutive-ones) |
 | [0561-array-partition](https://github.com/SatlasRohit/Leetcode/tree/master/0561-array-partition) |
 | [0636-exclusive-time-of-functions](https://github.com/SatlasRohit/Leetcode/tree/master/0636-exclusive-time-of-functions) |
+| [0744-find-smallest-letter-greater-than-target](https://github.com/SatlasRohit/Leetcode/tree/master/0744-find-smallest-letter-greater-than-target) |
 | [0896-monotonic-array](https://github.com/SatlasRohit/Leetcode/tree/master/0896-monotonic-array) |
 | [0961-n-repeated-element-in-size-2n-array](https://github.com/SatlasRohit/Leetcode/tree/master/0961-n-repeated-element-in-size-2n-array) |
 | [1390-four-divisors](https://github.com/SatlasRohit/Leetcode/tree/master/1390-four-divisors) |
@@ -189,6 +190,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0349-intersection-of-two-arrays](https://github.com/SatlasRohit/Leetcode/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/SatlasRohit/Leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0441-arranging-coins](https://github.com/SatlasRohit/Leetcode/tree/master/0441-arranging-coins) |
+| [0744-find-smallest-letter-greater-than-target](https://github.com/SatlasRohit/Leetcode/tree/master/0744-find-smallest-letter-greater-than-target) |
 ## Binary Tree
 |  |
 | ------- |
