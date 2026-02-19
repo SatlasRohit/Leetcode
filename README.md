@@ -64,6 +64,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0013-roman-to-integer](https://github.com/SatlasRohit/Leetcode/tree/master/0013-roman-to-integer) |
 | [0014-longest-common-prefix](https://github.com/SatlasRohit/Leetcode/tree/master/0014-longest-common-prefix) |
 | [0020-valid-parentheses](https://github.com/SatlasRohit/Leetcode/tree/master/0020-valid-parentheses) |
+| [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/SatlasRohit/Leetcode/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [1935-maximum-number-of-words-you-can-type](https://github.com/SatlasRohit/Leetcode/tree/master/1935-maximum-number-of-words-you-can-type) |
 ## Stack
 |  |
@@ -121,6 +122,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/SatlasRohit/Leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
+| [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/SatlasRohit/Leetcode/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [0031-next-permutation](https://github.com/SatlasRohit/Leetcode/tree/master/0031-next-permutation) |
 | [0075-sort-colors](https://github.com/SatlasRohit/Leetcode/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/SatlasRohit/Leetcode/tree/master/0088-merge-sorted-array) |
@@ -200,4 +202,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0175-combine-two-tables](https://github.com/SatlasRohit/Leetcode/tree/master/0175-combine-two-tables) |
 | [0181-employees-earning-more-than-their-managers](https://github.com/SatlasRohit/Leetcode/tree/master/0181-employees-earning-more-than-their-managers) |
+## String Matching
+|  |
+| ------- |
+| [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/SatlasRohit/Leetcode/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 <!---LeetCode Topics End-->
