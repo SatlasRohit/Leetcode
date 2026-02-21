@@ -3,31 +3,18 @@ class Solution {
         int count = 0;
 
         for (int i = left; i <= right; i++) {
-            int j = i;
-            int setbit = 0;
-
-            while (j > 0) {
-                if ((j & 1) == 1) {
-                    setbit++;
-                }
-                j >>= 1;
-            }
-
-            if (setbit < 2) continue;  // 0 & 1 not prime
-
-            boolean isPrime = true;
-            for (int k = 2; k * k <= setbit; k++) {
-                if (setbit % k == 0) {
-                    isPrime = false;
-                    break;
-                }
-            }
-
-            if (isPrime) {
-                count++;
-            }
+            int setbit = Integer.bitCount(i);
+            if (isPrime(setbit)) count++;
         }
 
         return count;
+    }
+
+    private boolean isPrime(int n) {
+        if (n < 2) return false;
+        for (int i = 2; i * i <= n; i++) {
+            if (n % i == 0) return false;
+        }
+        return true;
     }
 }
