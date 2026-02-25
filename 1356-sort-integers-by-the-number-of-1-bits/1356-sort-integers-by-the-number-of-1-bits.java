@@ -1,17 +1,35 @@
 class Solution {
     public int[] sortByBits(int[] arr) {
-        Integer[] boxed = Arrays.stream(arr).boxed().toArray(Integer[]::new);
+        Integer[] nums = Arrays.stream(arr).boxed().toArray(Integer[]::new);
+        Comparator<Integer> comparator = new CustomComparator();
+        Arrays.sort(nums, comparator);
+        return Arrays.stream(nums).mapToInt(Integer::intValue).toArray();
+    }
+}
 
-        Arrays.sort(boxed, (a, b) -> {
-            int bitsA = Integer.bitCount(a);
-            int bitsB = Integer.bitCount(b);
-
-            if (bitsA == bitsB) {
-                return a - b;   // smaller number first
+class CustomComparator implements Comparator<Integer> {
+    private int findWeight(int num) {
+        int mask = 1;
+        int weight = 0;
+        
+        while (num > 0) {
+            if ((num & mask) > 0) {
+                weight++;
+                num ^= mask;
             }
-            return bitsA - bitsB; // fewer bits first
-        });
-
-        return Arrays.stream(boxed).mapToInt(i -> i).toArray();
+            
+            mask <<= 1;
+        }
+        
+        return weight;
+    }
+    
+    @Override
+    public int compare(Integer a, Integer b) {
+        if (findWeight(a) == findWeight(b)) {
+            return a - b;
+        }
+        
+        return findWeight(a) - findWeight(b);
     }
 }
