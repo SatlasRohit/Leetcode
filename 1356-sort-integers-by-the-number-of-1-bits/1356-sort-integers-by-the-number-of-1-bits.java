@@ -8,28 +8,12 @@ class Solution {
 }
 
 class CustomComparator implements Comparator<Integer> {
-    private int findWeight(int num) {
-        int mask = 1;
-        int weight = 0;
-        
-        while (num > 0) {
-            if ((num & mask) > 0) {
-                weight++;
-                num ^= mask;
-            }
-            
-            mask <<= 1;
-        }
-        
-        return weight;
-    }
-    
     @Override
     public int compare(Integer a, Integer b) {
-        if (findWeight(a) == findWeight(b)) {
+        if (Integer.bitCount(a) == Integer.bitCount(b)) {
             return a - b;
         }
         
-        return findWeight(a) - findWeight(b);
+        return Integer.bitCount(a) - Integer.bitCount(b);
     }
 }
