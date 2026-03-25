@@ -47,6 +47,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2099-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/SatlasRohit/Leetcode/tree/master/2099-find-subsequence-of-length-k-with-the-largest-sum) |
 | [3379-transformed-array](https://github.com/SatlasRohit/Leetcode/tree/master/3379-transformed-array) |
 | [3507-minimum-pair-removal-to-sort-array-i](https://github.com/SatlasRohit/Leetcode/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
+| [3546-equal-sum-grid-partition-i](https://github.com/SatlasRohit/Leetcode/tree/master/3546-equal-sum-grid-partition-i) |
 | [3637-trionic-array-i](https://github.com/SatlasRohit/Leetcode/tree/master/3637-trionic-array-i) |
 ## Simulation
 |  |
@@ -210,6 +211,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0566-reshape-the-matrix](https://github.com/SatlasRohit/Leetcode/tree/master/0566-reshape-the-matrix) |
 | [1582-special-positions-in-a-binary-matrix](https://github.com/SatlasRohit/Leetcode/tree/master/1582-special-positions-in-a-binary-matrix) |
 | [1594-maximum-non-negative-product-in-a-matrix](https://github.com/SatlasRohit/Leetcode/tree/master/1594-maximum-non-negative-product-in-a-matrix) |
+| [3546-equal-sum-grid-partition-i](https://github.com/SatlasRohit/Leetcode/tree/master/3546-equal-sum-grid-partition-i) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -286,4 +288,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0322-coin-change](https://github.com/SatlasRohit/Leetcode/tree/master/0322-coin-change) |
+## Enumeration
+|  |
+| ------- |
+| [3546-equal-sum-grid-partition-i](https://github.com/SatlasRohit/Leetcode/tree/master/3546-equal-sum-grid-partition-i) |
+## Prefix Sum
+|  |
+| ------- |
+| [3546-equal-sum-grid-partition-i](https://github.com/SatlasRohit/Leetcode/tree/master/3546-equal-sum-grid-partition-i) |
 <!---LeetCode Topics End-->
