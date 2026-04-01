@@ -45,6 +45,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1920-build-array-from-permutation](https://github.com/SatlasRohit/Leetcode/tree/master/1920-build-array-from-permutation) |
 | [1929-concatenation-of-array](https://github.com/SatlasRohit/Leetcode/tree/master/1929-concatenation-of-array) |
 | [2099-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/SatlasRohit/Leetcode/tree/master/2099-find-subsequence-of-length-k-with-the-largest-sum) |
+| [2751-robot-collisions](https://github.com/SatlasRohit/Leetcode/tree/master/2751-robot-collisions) |
 | [3379-transformed-array](https://github.com/SatlasRohit/Leetcode/tree/master/3379-transformed-array) |
 | [3507-minimum-pair-removal-to-sort-array-i](https://github.com/SatlasRohit/Leetcode/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
 | [3546-equal-sum-grid-partition-i](https://github.com/SatlasRohit/Leetcode/tree/master/3546-equal-sum-grid-partition-i) |
@@ -57,6 +58,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1441-build-an-array-with-stack-operations](https://github.com/SatlasRohit/Leetcode/tree/master/1441-build-an-array-with-stack-operations) |
 | [1920-build-array-from-permutation](https://github.com/SatlasRohit/Leetcode/tree/master/1920-build-array-from-permutation) |
 | [1929-concatenation-of-array](https://github.com/SatlasRohit/Leetcode/tree/master/1929-concatenation-of-array) |
+| [2751-robot-collisions](https://github.com/SatlasRohit/Leetcode/tree/master/2751-robot-collisions) |
 | [3379-transformed-array](https://github.com/SatlasRohit/Leetcode/tree/master/3379-transformed-array) |
 | [3507-minimum-pair-removal-to-sort-array-i](https://github.com/SatlasRohit/Leetcode/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
 ## Linked List
@@ -95,6 +97,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0225-implement-stack-using-queues](https://github.com/SatlasRohit/Leetcode/tree/master/0225-implement-stack-using-queues) |
 | [0636-exclusive-time-of-functions](https://github.com/SatlasRohit/Leetcode/tree/master/0636-exclusive-time-of-functions) |
 | [1441-build-an-array-with-stack-operations](https://github.com/SatlasRohit/Leetcode/tree/master/1441-build-an-array-with-stack-operations) |
+| [2751-robot-collisions](https://github.com/SatlasRohit/Leetcode/tree/master/2751-robot-collisions) |
 ## Greedy
 |  |
 | ------- |
@@ -112,6 +115,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1122-relative-sort-array](https://github.com/SatlasRohit/Leetcode/tree/master/1122-relative-sort-array) |
 | [1356-sort-integers-by-the-number-of-1-bits](https://github.com/SatlasRohit/Leetcode/tree/master/1356-sort-integers-by-the-number-of-1-bits) |
 | [2099-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/SatlasRohit/Leetcode/tree/master/2099-find-subsequence-of-length-k-with-the-largest-sum) |
+| [2751-robot-collisions](https://github.com/SatlasRohit/Leetcode/tree/master/2751-robot-collisions) |
 ## Counting Sort
 |  |
 | ------- |
