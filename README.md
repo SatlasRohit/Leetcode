@@ -52,6 +52,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3546-equal-sum-grid-partition-i](https://github.com/SatlasRohit/Leetcode/tree/master/3546-equal-sum-grid-partition-i) |
 | [3637-trionic-array-i](https://github.com/SatlasRohit/Leetcode/tree/master/3637-trionic-array-i) |
 | [3653-xor-after-range-multiplication-queries-i](https://github.com/SatlasRohit/Leetcode/tree/master/3653-xor-after-range-multiplication-queries-i) |
+| [3655-xor-after-range-multiplication-queries-ii](https://github.com/SatlasRohit/Leetcode/tree/master/3655-xor-after-range-multiplication-queries-ii) |
 ## Simulation
 |  |
 | ------- |
@@ -201,6 +202,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0191-number-of-1-bits](https://github.com/SatlasRohit/Leetcode/tree/master/0191-number-of-1-bits) |
 | [0761-special-binary-string](https://github.com/SatlasRohit/Leetcode/tree/master/0761-special-binary-string) |
 | [3653-xor-after-range-multiplication-queries-i](https://github.com/SatlasRohit/Leetcode/tree/master/3653-xor-after-range-multiplication-queries-i) |
+| [3655-xor-after-range-multiplication-queries-ii](https://github.com/SatlasRohit/Leetcode/tree/master/3655-xor-after-range-multiplication-queries-ii) |
 ## Bit Manipulation
 |  |
 | ------- |
