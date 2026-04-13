@@ -3,7 +3,10 @@ class Solution {
         int min=Integer.MAX_VALUE;
         for(int i=0;i<nums.length;i++){
             if(nums[i]==target){
-                min=Math.min(Math.abs(i-start),min);
+                int k=Math.abs(i-start);
+                if(min>k){
+                    min=k;
+                }
             }
         }
         return min;
