@@ -1,13 +1,13 @@
 class Solution {
-    public boolean judgeCircle(String moves) {
-        int countL=0,countR=0,countU=0,countD=0;
-        for(int i=0;i<moves.length();i++){
-            if(moves.charAt(i)=='L') countL++;
-            else if(moves.charAt(i)=='R') countR++;
-            else if(moves.charAt(i)=='U') countU++;
-            else countD++;
+    
+    public static boolean judgeCircle(String moves) {
+        int[] freq = new int[26];
+        char[] move = moves.toCharArray();
+        if(move.length % 2 != 0) return false;
+        for(char ch : move){
+            freq[ch - 'A']++;
         }
-        Boolean stmt = Math.abs(Math.abs(countU - countD) + Math.abs(countL - countR)) ==0;        
-        return stmt;
+        if(freq['U' - 'A'] == freq['D' - 'A'] && freq['L' - 'A'] == freq['R' - 'A']) return true;
+        return false;
     }
 }
