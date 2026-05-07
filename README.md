@@ -59,6 +59,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3637-trionic-array-i](https://github.com/SatlasRohit/Leetcode/tree/master/3637-trionic-array-i) |
 | [3653-xor-after-range-multiplication-queries-i](https://github.com/SatlasRohit/Leetcode/tree/master/3653-xor-after-range-multiplication-queries-i) |
 | [3655-xor-after-range-multiplication-queries-ii](https://github.com/SatlasRohit/Leetcode/tree/master/3655-xor-after-range-multiplication-queries-ii) |
+| [3660-jump-game-ix](https://github.com/SatlasRohit/Leetcode/tree/master/3660-jump-game-ix) |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/SatlasRohit/Leetcode/tree/master/3740-minimum-distance-between-three-equal-elements-i) |
 ## Simulation
 |  |
@@ -269,6 +270,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1594-maximum-non-negative-product-in-a-matrix](https://github.com/SatlasRohit/Leetcode/tree/master/1594-maximum-non-negative-product-in-a-matrix) |
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/SatlasRohit/Leetcode/tree/master/1888-minimum-number-of-flips-to-make-the-binary-string-alternating) |
 | [3418-maximum-amount-of-money-robot-can-earn](https://github.com/SatlasRohit/Leetcode/tree/master/3418-maximum-amount-of-money-robot-can-earn) |
+| [3660-jump-game-ix](https://github.com/SatlasRohit/Leetcode/tree/master/3660-jump-game-ix) |
 ## Doubly-Linked List
 |  |
 | ------- |
