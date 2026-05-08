@@ -56,6 +56,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3418-maximum-amount-of-money-robot-can-earn](https://github.com/SatlasRohit/Leetcode/tree/master/3418-maximum-amount-of-money-robot-can-earn) |
 | [3507-minimum-pair-removal-to-sort-array-i](https://github.com/SatlasRohit/Leetcode/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
 | [3546-equal-sum-grid-partition-i](https://github.com/SatlasRohit/Leetcode/tree/master/3546-equal-sum-grid-partition-i) |
+| [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/SatlasRohit/Leetcode/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
 | [3637-trionic-array-i](https://github.com/SatlasRohit/Leetcode/tree/master/3637-trionic-array-i) |
 | [3653-xor-after-range-multiplication-queries-i](https://github.com/SatlasRohit/Leetcode/tree/master/3653-xor-after-range-multiplication-queries-i) |
 | [3655-xor-after-range-multiplication-queries-ii](https://github.com/SatlasRohit/Leetcode/tree/master/3655-xor-after-range-multiplication-queries-ii) |
@@ -162,6 +163,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1935-maximum-number-of-words-you-can-type](https://github.com/SatlasRohit/Leetcode/tree/master/1935-maximum-number-of-words-you-can-type) |
 | [2099-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/SatlasRohit/Leetcode/tree/master/2099-find-subsequence-of-length-k-with-the-largest-sum) |
 | [3507-minimum-pair-removal-to-sort-array-i](https://github.com/SatlasRohit/Leetcode/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
+| [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/SatlasRohit/Leetcode/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/SatlasRohit/Leetcode/tree/master/3740-minimum-distance-between-three-equal-elements-i) |
 ## Design
 |  |
@@ -219,6 +221,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/SatlasRohit/Leetcode/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
 | [2235-add-two-integers](https://github.com/SatlasRohit/Leetcode/tree/master/2235-add-two-integers) |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/SatlasRohit/Leetcode/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
+| [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/SatlasRohit/Leetcode/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -337,6 +340,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0322-coin-change](https://github.com/SatlasRohit/Leetcode/tree/master/0322-coin-change) |
+| [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/SatlasRohit/Leetcode/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
 ## Enumeration
 |  |
 | ------- |
@@ -345,4 +349,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3546-equal-sum-grid-partition-i](https://github.com/SatlasRohit/Leetcode/tree/master/3546-equal-sum-grid-partition-i) |
+## Number Theory
+|  |
+| ------- |
+| [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/SatlasRohit/Leetcode/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
 <!---LeetCode Topics End-->
