@@ -1,41 +1,45 @@
 class Solution {
+    private int traverse(int[][] g, int[] la, int m, int n, int i, boolean f, int v, int l) {
+        int r1 = i, c1 = i;
+        int r2 = i, c2 = n - i - 1;
+        int r3 = m - i - 1, c3 = n - i - 1;
+        int r4 = m - i - 1, c4 = i;
+        /*System.out.println(r1 + " " + c1);
+        System.out.println(r2 + " " + c2);
+        System.out.println(r3 + " " + c3);
+        System.out.println(r4 + " " + c4);*/
+        int j = 0;
+        for (int k = r1; k <= r4; k++)
+            if (f)
+                g[k][c1] = la[(j++ + v) % l];
+            else
+                la[j++] = g[k][c1];
+        for (int k = c4 + 1; k <= c3; k++)
+            if (f)
+                g[r4][k] = la[(j++ + v) % l];
+            else
+                la[j++] = g[r4][k];
+        for (int k = r3 - 1; k >= r2; k--)
+            if (f)
+                g[k][c2] = la[(j++ + v) % l];
+            else
+                la[j++] = g[k][c2];
+        for (int k = c2 - 1; k > c1; k--)
+            if (f)
+                g[r1][k] = la[(j++ + v) % l];
+            else
+                la[j++] = g[r1][k];
+        return j;
+    }
 
     public int[][] rotateGrid(int[][] grid, int k) {
-        int m = grid.length;
-        int n = grid[0].length;
-        int nlayer = Math.min(m / 2, n / 2); // level count
-        // enumerate each layer counterclockwise starting from the top-left corner
-        for (int layer = 0; layer < nlayer; ++layer) {
-            List<Integer> r = new ArrayList<>();
-            List<Integer> c = new ArrayList<>();
-            List<Integer> val = new ArrayList<>(); // each element's row index, column index, and value
-            for (int i = layer; i < m - layer - 1; ++i) { // left
-                r.add(i);
-                c.add(layer);
-                val.add(grid[i][layer]);
-            }
-            for (int j = layer; j < n - layer - 1; ++j) { // down
-                r.add(m - layer - 1);
-                c.add(j);
-                val.add(grid[m - layer - 1][j]);
-            }
-            for (int i = m - layer - 1; i > layer; --i) { // right
-                r.add(i);
-                c.add(n - layer - 1);
-                val.add(grid[i][n - layer - 1]);
-            }
-            for (int j = n - layer - 1; j > layer; --j) { // up
-                r.add(layer);
-                c.add(j);
-                val.add(grid[layer][j]);
-            }
-            int total = val.size(); // total number of elements in each layer
-            int kk = k % total; // equivalent number of rotations
-            // find the value at each index after rotation
-            for (int i = 0; i < total; ++i) {
-                int idx = (i + total - kk) % total; // the index corresponding to the value after rotation
-                grid[r.get(i)][c.get(i)] = val.get(idx);
-            }
+        int m = grid.length, n = grid[0].length;
+        int[] la = new int[(m + n - 2) << 1];
+        int rc = Math.min(m, n) >> 1;
+        for (int i = 0; i < rc; i++) {
+            int l = traverse(grid, la, m, n, i, false, k, 0);
+            //System.out.println(l);
+            traverse(grid, la, m, n, i, true, l - (k % l), l);
         }
         return grid;
     }
