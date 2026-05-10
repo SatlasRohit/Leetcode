@@ -23,6 +23,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/SatlasRohit/Leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/SatlasRohit/Leetcode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0189-rotate-array](https://github.com/SatlasRohit/Leetcode/tree/master/0189-rotate-array) |
+| [0217-contains-duplicate](https://github.com/SatlasRohit/Leetcode/tree/master/0217-contains-duplicate) |
 | [0239-sliding-window-maximum](https://github.com/SatlasRohit/Leetcode/tree/master/0239-sliding-window-maximum) |
 | [0322-coin-change](https://github.com/SatlasRohit/Leetcode/tree/master/0322-coin-change) |
 | [0349-intersection-of-two-arrays](https://github.com/SatlasRohit/Leetcode/tree/master/0349-intersection-of-two-arrays) |
@@ -135,6 +136,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0056-merge-intervals](https://github.com/SatlasRohit/Leetcode/tree/master/0056-merge-intervals) |
 | [0075-sort-colors](https://github.com/SatlasRohit/Leetcode/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/SatlasRohit/Leetcode/tree/master/0088-merge-sorted-array) |
+| [0217-contains-duplicate](https://github.com/SatlasRohit/Leetcode/tree/master/0217-contains-duplicate) |
 | [0349-intersection-of-two-arrays](https://github.com/SatlasRohit/Leetcode/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/SatlasRohit/Leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0561-array-partition](https://github.com/SatlasRohit/Leetcode/tree/master/0561-array-partition) |
@@ -159,6 +161,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0013-roman-to-integer](https://github.com/SatlasRohit/Leetcode/tree/master/0013-roman-to-integer) |
 | [0073-set-matrix-zeroes](https://github.com/SatlasRohit/Leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0141-linked-list-cycle](https://github.com/SatlasRohit/Leetcode/tree/master/0141-linked-list-cycle) |
+| [0217-contains-duplicate](https://github.com/SatlasRohit/Leetcode/tree/master/0217-contains-duplicate) |
 | [0349-intersection-of-two-arrays](https://github.com/SatlasRohit/Leetcode/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/SatlasRohit/Leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/SatlasRohit/Leetcode/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
