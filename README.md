@@ -52,6 +52,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1929-concatenation-of-array](https://github.com/SatlasRohit/Leetcode/tree/master/1929-concatenation-of-array) |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/SatlasRohit/Leetcode/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
 | [2099-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/SatlasRohit/Leetcode/tree/master/2099-find-subsequence-of-length-k-with-the-largest-sum) |
+| [2553-separate-the-digits-in-an-array](https://github.com/SatlasRohit/Leetcode/tree/master/2553-separate-the-digits-in-an-array) |
 | [2751-robot-collisions](https://github.com/SatlasRohit/Leetcode/tree/master/2751-robot-collisions) |
 | [2770-maximum-number-of-jumps-to-reach-the-last-index](https://github.com/SatlasRohit/Leetcode/tree/master/2770-maximum-number-of-jumps-to-reach-the-last-index) |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/SatlasRohit/Leetcode/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
@@ -75,6 +76,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1914-cyclically-rotating-a-grid](https://github.com/SatlasRohit/Leetcode/tree/master/1914-cyclically-rotating-a-grid) |
 | [1920-build-array-from-permutation](https://github.com/SatlasRohit/Leetcode/tree/master/1920-build-array-from-permutation) |
 | [1929-concatenation-of-array](https://github.com/SatlasRohit/Leetcode/tree/master/1929-concatenation-of-array) |
+| [2553-separate-the-digits-in-an-array](https://github.com/SatlasRohit/Leetcode/tree/master/2553-separate-the-digits-in-an-array) |
 | [2751-robot-collisions](https://github.com/SatlasRohit/Leetcode/tree/master/2751-robot-collisions) |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/SatlasRohit/Leetcode/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
 | [3379-transformed-array](https://github.com/SatlasRohit/Leetcode/tree/master/3379-transformed-array) |
