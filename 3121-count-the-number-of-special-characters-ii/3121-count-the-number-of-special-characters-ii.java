@@ -1,42 +1,28 @@
 class Solution {
 
     public int numberOfSpecialChars(String word) {
-
-        int[] lastLower = new int[26];
-        int[] firstUpper = new int[26];
-
-        Arrays.fill(lastLower,-1);
-        Arrays.fill(firstUpper,-1);
+        int[] lastLow = new int[26];
+        int[] firstUp = new int[26];
+        Arrays.fill(lastLow, -1);
+        Arrays.fill(firstUp, -1);
         for (int i = 0; i < word.length(); i++) {
-
-            char ch = word.charAt(i);
-
-            if (Character.isLowerCase(ch)) {
-
-                lastLower[ch - 'a'] = i;
-
+            char c = word.charAt(i);
+            if (Character.isLowerCase(c)) {
+                lastLow[c - 'a'] = i;
             } else {
-
-                int idx = ch - 'A';
-
-                if (firstUpper[idx] == -1) {
-                    firstUpper[idx] = i;
+                if (firstUp[c - 'A'] == -1) {
+                    firstUp[c - 'A'] = i;
                 }
             }
         }
-
-        int count = 0;
-
+        int ans = 0;
         for (int i = 0; i < 26; i++) {
-
-            if (lastLower[i] != -1 &&
-                firstUpper[i] != -1 &&
-                lastLower[i] < firstUpper[i]) {
-
-                count++;
+            if (
+                lastLow[i] != -1 && firstUp[i] != -1 && lastLow[i] < firstUp[i]
+            ) {
+                ans++;
             }
         }
-
-        return count;
+        return ans;
     }
 }
