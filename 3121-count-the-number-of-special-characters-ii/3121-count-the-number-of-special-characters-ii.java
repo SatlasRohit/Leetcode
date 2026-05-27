@@ -1,22 +1,30 @@
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+
 class Solution {
-
     public int numberOfSpecialChars(String word) {
-
         int[] lastLower = new int[26];
         int[] firstUpper = new int[26];
 
-        Arrays.fill(lastLower,-1);
-        Arrays.fill(firstUpper,-1);
-        for (int i = 0; i < word.length(); i++) {
+        Arrays.fill(lastLower, -1);
+        Arrays.fill(firstUpper, -1);
 
+        Set<Integer> invalid = new HashSet<>();
+
+        for (int i = 0; i < word.length(); i++) {
             char ch = word.charAt(i);
 
-            if (Character.isLowerCase(ch)) {
+            if (ch >= 'a' && ch <= 'z') {
+                int idx = ch - 'a';
 
-                lastLower[ch - 'a'] = i;
+                lastLower[idx] = i;
+
+                if (firstUpper[idx] != -1) {
+                    invalid.add(idx);
+                }
 
             } else {
-
                 int idx = ch - 'A';
 
                 if (firstUpper[idx] == -1) {
@@ -25,18 +33,17 @@ class Solution {
             }
         }
 
-        int count = 0;
+        int specialCount = 0;
 
         for (int i = 0; i < 26; i++) {
-
             if (lastLower[i] != -1 &&
                 firstUpper[i] != -1 &&
-                lastLower[i] < firstUpper[i]) {
+                !invalid.contains(i)) {
 
-                count++;
+                specialCount++;
             }
         }
 
-        return count;
+        return specialCount;
     }
 }
