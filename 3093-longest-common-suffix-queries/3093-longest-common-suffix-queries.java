@@ -3,30 +3,27 @@ class Solution {
     class TrieNode {
         TrieNode[] child = new TrieNode[26];
 
-        // best index stored at this node
-        int index = -1;
-
-        // smallest length for tie breaking
         int len = Integer.MAX_VALUE;
+        int idx = 0;
     }
 
     TrieNode root = new TrieNode();
 
-    // Insert reversed word into trie
-    private void insert(String word, int idx) {
+    void insert(String s, int index) {
 
         TrieNode node = root;
-        int n = word.length();
 
-        // update root answer
+        int n = s.length();
+
+        // update root
         if (n < node.len) {
             node.len = n;
-            node.index = idx;
+            node.idx = index;
         }
 
-        for (int i = n - 1; i >= 0; i--) {
+        for (int i = n - 1; i >= 0; --i) {
 
-            int c = word.charAt(i) - 'a';
+            int c = s.charAt(i) - 'a';
 
             if (node.child[c] == null) {
                 node.child[c] = new TrieNode();
@@ -34,47 +31,47 @@ class Solution {
 
             node = node.child[c];
 
-            // store best answer at every node
             if (n < node.len) {
                 node.len = n;
-                node.index = idx;
+                node.idx = index;
             }
         }
     }
 
-    // Find best matching suffix
-    private int search(String word) {
+    int search(String s) {
 
         TrieNode node = root;
 
-        for (int i = word.length() - 1; i >= 0; i--) {
+        int ans = node.idx;
 
-            int c = word.charAt(i) - 'a';
+        for (int i = s.length() - 1; i >= 0; --i) {
+
+            int c = s.charAt(i) - 'a';
 
             if (node.child[c] == null) {
                 break;
             }
 
             node = node.child[c];
+
+            ans = node.idx;
         }
 
-        return node.index;
+        return ans;
     }
 
     public int[] stringIndices(String[] wordsContainer, String[] wordsQuery) {
 
-        // build trie
-        for (int i = 0; i < wordsContainer.length; i++) {
+        for (int i = 0; i < wordsContainer.length; ++i) {
             insert(wordsContainer[i], i);
         }
 
-        int[] ans = new int[wordsQuery.length];
+        int[] res = new int[wordsQuery.length];
 
-        // answer queries
-        for (int i = 0; i < wordsQuery.length; i++) {
-            ans[i] = search(wordsQuery[i]);
+        for (int i = 0; i < wordsQuery.length; ++i) {
+            res[i] = search(wordsQuery[i]);
         }
 
-        return ans;
+        return res;
     }
 }
