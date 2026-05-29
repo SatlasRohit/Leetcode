@@ -73,6 +73,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2784-check-if-array-is-good](https://github.com/SatlasRohit/Leetcode/tree/master/2784-check-if-array-is-good) |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/SatlasRohit/Leetcode/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
 | [3093-longest-common-suffix-queries](https://github.com/SatlasRohit/Leetcode/tree/master/3093-longest-common-suffix-queries) |
+| [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/SatlasRohit/Leetcode/tree/master/3300-minimum-element-after-replacement-with-digit-sum) |
 | [3379-transformed-array](https://github.com/SatlasRohit/Leetcode/tree/master/3379-transformed-array) |
 | [3418-maximum-amount-of-money-robot-can-earn](https://github.com/SatlasRohit/Leetcode/tree/master/3418-maximum-amount-of-money-robot-can-earn) |
 | [3507-minimum-pair-removal-to-sort-array-i](https://github.com/SatlasRohit/Leetcode/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
@@ -268,6 +269,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/SatlasRohit/Leetcode/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
 | [2235-add-two-integers](https://github.com/SatlasRohit/Leetcode/tree/master/2235-add-two-integers) |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/SatlasRohit/Leetcode/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
+| [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/SatlasRohit/Leetcode/tree/master/3300-minimum-element-after-replacement-with-digit-sum) |
 | [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/SatlasRohit/Leetcode/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
 ## Divide and Conquer
 |  |
