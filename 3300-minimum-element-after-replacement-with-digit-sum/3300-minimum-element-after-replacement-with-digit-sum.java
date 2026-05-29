@@ -1,8 +1,7 @@
 class Solution {
     public int minElement(int[] nums) {
-        int n=nums.length;
         int min=Integer.MAX_VALUE;
-        for(int i=0;i<n;i++){
+        for(int i=0;i<nums.length;i++){
             int digit=nums[i];
             int sum=0;
             while(digit>9){
