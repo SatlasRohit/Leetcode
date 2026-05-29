@@ -5,7 +5,7 @@ class Solution {
         for(int i=0;i<n;i++){
             int digit=nums[i];
             int sum=0;
-            while(digit>=10){
+            while(digit>9){
                 sum+=digit%10;
                 digit/=10;
             }
