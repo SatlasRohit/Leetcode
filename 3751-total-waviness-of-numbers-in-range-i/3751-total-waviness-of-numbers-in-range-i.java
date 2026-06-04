@@ -1,6 +1,6 @@
 class Solution {
     public int totalWaviness(int num1, int num2) {
-        // if(num1 < 100 && num2 < 100) return 0;
+        if(num1 < 100 && num2 < 100) return 0;
 
         int waviness=0;
     
