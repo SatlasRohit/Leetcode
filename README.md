@@ -291,6 +291,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/SatlasRohit/Leetcode/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
 | [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/SatlasRohit/Leetcode/tree/master/3300-minimum-element-after-replacement-with-digit-sum) |
 | [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/SatlasRohit/Leetcode/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
+| [3751-total-waviness-of-numbers-in-range-i](https://github.com/SatlasRohit/Leetcode/tree/master/3751-total-waviness-of-numbers-in-range-i) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -351,6 +352,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2770-maximum-number-of-jumps-to-reach-the-last-index](https://github.com/SatlasRohit/Leetcode/tree/master/2770-maximum-number-of-jumps-to-reach-the-last-index) |
 | [3418-maximum-amount-of-money-robot-can-earn](https://github.com/SatlasRohit/Leetcode/tree/master/3418-maximum-amount-of-money-robot-can-earn) |
 | [3660-jump-game-ix](https://github.com/SatlasRohit/Leetcode/tree/master/3660-jump-game-ix) |
+| [3751-total-waviness-of-numbers-in-range-i](https://github.com/SatlasRohit/Leetcode/tree/master/3751-total-waviness-of-numbers-in-range-i) |
 ## Doubly-Linked List
 |  |
 | ------- |
@@ -435,6 +437,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3546-equal-sum-grid-partition-i](https://github.com/SatlasRohit/Leetcode/tree/master/3546-equal-sum-grid-partition-i) |
+| [3751-total-waviness-of-numbers-in-range-i](https://github.com/SatlasRohit/Leetcode/tree/master/3751-total-waviness-of-numbers-in-range-i) |
 ## Prefix Sum
 |  |
 | ------- |
