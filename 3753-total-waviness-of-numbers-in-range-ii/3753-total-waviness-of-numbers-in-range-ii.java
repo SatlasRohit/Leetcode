@@ -1,100 +1,84 @@
 class Solution {
+    // directions
+    static final int NONE = 0, UP = 1, DOWN = 2, FLAT = 3;
 
-    private String s;
-    private int n;
-    private long[][][] memo_cnt;
-    private long[][][] memo_sum;
+    int[] digits;
+    Map<Long, long[]> memo;
 
     public long totalWaviness(long num1, long num2) {
         return solve(num2) - solve(num1 - 1);
     }
 
-    // calculate the sum of fluctuation values of all numbers in the range [0, num]
-    private long solve(long num) {
-        // if the fluctuation value of numbers less than 3 is 0
-        if (num < 100) {
-            return 0L;
-        }
-        s = Long.toString(num);
-        n = s.length();
+    long solve(long num) {
+        if (num <= 0)
+            return 0;
+        memo = new HashMap<>();
 
-        // memoized search uses two independent arrays
-        // memo_cnt[pos][x][y]: the number of valid filling schemes where the current digit is at position pos, and the previous two digits are x and y
-        memo_cnt = new long[16][10][10];
-        // memo_sum[pos][x][y]: the fluctuation value when the current position is pos, and the two left digits are x and y
-        memo_sum = new long[16][10][10];
-        for (int i = 0; i < 16; i++) {
-            for (int j = 0; j < 10; j++) {
-                Arrays.fill(memo_cnt[i][j], -1);
-                Arrays.fill(memo_sum[i][j], -1);
-            }
+        // split num into digits
+        String s = Long.toString(num);
+        digits = new int[s.length()];
+        for (int i = 0; i < s.length(); i++) {
+            digits[i] = s.charAt(i) - '0';
         }
 
-        long[] result = dfs(0, -1, -1, true, true);
-        return result[1];
+        return dp(0, 0, NONE, true, false)[1];
     }
 
-    private long[] dfs(
-        int pos,
-        int prev,
-        int curr,
-        boolean isLimit,
-        boolean isLeading
-    ) {
-        // end position
-        if (pos == n) {
-            return new long[] { 1L, 0L };
-        }
-        // use memoization only when not bounded by an upper limit and without leading zeros
-        if (!isLimit && !isLeading && prev >= 0 && curr >= 0) {
-            if (memo_cnt[pos][prev][curr] != -1) {
-                return new long[] {
-                    memo_cnt[pos][prev][curr],
-                    memo_sum[pos][prev][curr],
-                };
-            }
+    // returns [count of numbers, total waviness sum]
+    long[] dp(int pos, int prev, int dir, boolean tight, boolean started) {
+        if (pos == digits.length) {
+            return new long[] { started ? 1 : 0, 0 };
         }
 
-        // calculate the number of schemes and fluctuation value under the current conditions
-        long cnt = 0;
-        long sum = 0;
-        int up = isLimit ? (s.charAt(pos) - '0') : 9;
-        for (int digit = 0; digit <= up; ++digit) {
-            boolean newLeading = isLeading && (digit == 0);
-            // the previous number is updated to curr
-            int newPrev = curr;
-            // the current number is updated to digit
-            int newCurr = newLeading ? -1 : digit;
-            long[] sub = dfs(
-                pos + 1,
-                newPrev,
-                newCurr,
-                isLimit && (digit == up),
-                newLeading
-            );
-            long subCnt = sub[0];
-            long subSum = sub[1];
-            // only calculate the fluctuation value when there are no leading zeros
-            if (!newLeading && prev >= 0 && curr >= 0) {
-                // when the digit is a peak or a valley, update the current fluctuation value
-                if (
-                    (prev < curr && curr > digit) ||
-                    (prev > curr && curr < digit)
-                ) {
-                    sum += subCnt;
-                }
+        long key = ((long) pos * 10 + prev) * 4 + dir;
+        key = key * 2 + (tight ? 1 : 0);
+        key = key * 2 + (started ? 1 : 0);
+        if (memo.containsKey(key))
+            return memo.get(key);
+
+        int limit = tight ? digits[pos] : 9;
+        long count = 0, waveSum = 0;
+
+        for (int d = 0; d <= limit; d++) {
+            boolean newTight = tight && (d == limit);
+            boolean newStarted = started || (d != 0);
+
+            // determine new prev and direction
+            int newPrev, newDir;
+            if (!newStarted) {
+                // still leading zeros
+                newPrev = 0;
+                newDir = NONE;
+            } else if (!started) {
+                // first real digit
+                newPrev = d;
+                newDir = NONE;
+            } else {
+                newPrev = d;
+                if (d > prev)
+                    newDir = UP;
+                else if (d < prev)
+                    newDir = DOWN;
+                else
+                    newDir = FLAT;
             }
 
-            cnt += subCnt;
-            sum += subSum;
+            // check if prev digit becomes a peak or valley
+            long extra = 0;
+            if (started) {
+                if (dir == UP && d < prev)
+                    extra = 1; // prev was peak
+                if (dir == DOWN && d > prev)
+                    extra = 1; // prev was valley
+            }
+
+            long[] sub = dp(pos + 1, newPrev, newDir, newTight, newStarted);
+            count += sub[0];
+            waveSum += sub[1] + extra * sub[0];
         }
 
-        if (!isLimit && !isLeading && prev >= 0 && curr >= 0) {
-            // update the memoization array
-            memo_cnt[pos][prev][curr] = cnt;
-            memo_sum[pos][prev][curr] = sum;
-        }
-
-        return new long[] { cnt, sum };
+        long[] res = new long[] { count, waveSum };
+        memo.put(key, res);
+        return res;
     }
 }
