@@ -11,10 +11,9 @@ class Solution {
         }
         for(int i = n-2 ; i >= 0 ; i--){
             rightsum[i] = rightsum[i+1] + nums[i+1];
-        }
-        for(int i = 0 ; i < n ; i++){
             ans[i] = Math.abs(leftsum[i] - rightsum[i]);
         }
+        ans[n-1]=Math.abs(leftsum[n-1]-rightsum[n-1]);
         return ans;
     }
 }
