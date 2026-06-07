@@ -15,50 +15,66 @@
  */
 class Solution {
 
-    public TreeNode createBinaryTree(int[][] descriptions) {
-        // Sets to track unique children and parents
-        Set<Integer> children = new HashSet<>(), parents = new HashSet<>();
-        // Map to store parent to children relationships
-        Map<Integer, List<int[]>> parentToChildren = new HashMap<>();
+    /*
+     We use an array to store references to all nodes by their value.
+     Constraint guarantees node values ≤ 100000.
+     
+     nodes[v] will store the TreeNode with value v.
+    */
+    private static final TreeNode[] nodes = new TreeNode[100001];
 
-        // Build graph from parent to child, and add nodes to HashSets
-        for (int[] d : descriptions) {
-            int parent = d[0], child = d[1], isLeft = d[2];
-            parents.add(parent);
-            parents.add(child);
-            children.add(child);
-            parentToChildren
-                .computeIfAbsent(parent, l -> new ArrayList<>())
-                .add(new int[] { child, isLeft });
+    public TreeNode createBinaryTree(int[][] descriptions) {
+
+        /*
+         First pass:
+         For every parent value (x[0]), mark nodes[x[0]] as null.
+         This helps identify the root later.
+         The root is the node that never appears as a child.
+        */
+        for (int[] x : descriptions) {
+            nodes[x[0]] = null;
         }
 
-        // Find the root node by checking which node is in parents but not in children
-        parents.removeAll(children);
-        TreeNode root = new TreeNode(parents.iterator().next());
+        /*
+         Second pass:
+         Create TreeNode objects for all child values (x[1]).
+         This guarantees that child nodes already exist
+         before linking them to parents.
+        */
+        for (int[] x : descriptions) {
+            nodes[x[1]] = new TreeNode(x[1]);
+        }
 
-        // Starting from root, use BFS to construct binary tree
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.offer(root);
+        TreeNode root = null;
 
-        while (!queue.isEmpty()) {
-            TreeNode parent = queue.poll();
-            // Iterate over children of current parent
-            for (int[] childInfo : parentToChildren.getOrDefault(
-                parent.val,
-                Collections.emptyList()
-            )) {
-                int childValue = childInfo[0], isLeft = childInfo[1];
-                TreeNode child = new TreeNode(childValue);
-                queue.offer(child);
-                // Attach child node to its parent based on isLeft flag
-                if (isLeft == 1) {
-                    parent.left = child;
-                } else {
-                    parent.right = child;
-                }
+        /*
+         Third pass:
+         - Create parent node if it does not exist
+         - Attach child node as left or right
+        */
+        for (int[] x : descriptions) {
+
+            /*
+             If parent node does not exist yet,
+             create it and mark it as root.
+             (Only the actual root will satisfy this condition)
+            */
+            if (nodes[x[0]] == null) {
+                root = nodes[x[0]] = new TreeNode(x[0]);
+            }
+
+            /*
+             x[2] == 1 → child is left child
+             x[2] == 0 → child is right child
+            */
+            if (x[2] == 1) {
+                nodes[x[0]].left = nodes[x[1]];
+            } else {
+                nodes[x[0]].right = nodes[x[1]];
             }
         }
 
+        // Return the root of the constructed binary tree
         return root;
     }
 }
