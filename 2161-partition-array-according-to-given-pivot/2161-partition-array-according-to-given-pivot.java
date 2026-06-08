@@ -1,7 +1,7 @@
 class Solution {
-    static{
-        for(int i=0;i<300;i++) pivotArray(new int[2],0);
-    }
+    // static{
+    //     for(int i=0;i<300;i++) pivotArray(new int[2],0);
+    // }
     public static int[] pivotArray(int[] nums, int pivot) {
         int n = nums.length;
         int[] result = new int[n];
