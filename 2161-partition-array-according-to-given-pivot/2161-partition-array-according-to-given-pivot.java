@@ -6,21 +6,21 @@ class Solution {
 
         int index = 0;
 
-        // Smaller than pivot
+        // Elements smaller than pivot
         for (int num : nums) {
             if (num < pivot) {
                 result[index++] = num;
             }
         }
 
-        // Equal to pivot
+        // Elements equal to pivot
         for (int num : nums) {
             if (num == pivot) {
                 result[index++] = num;
             }
         }
 
-        // Greater than pivot
+        // Elements greater than pivot
         for (int num : nums) {
             if (num > pivot) {
                 result[index++] = num;
