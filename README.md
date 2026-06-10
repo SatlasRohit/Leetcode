@@ -96,6 +96,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3655-xor-after-range-multiplication-queries-ii](https://github.com/SatlasRohit/Leetcode/tree/master/3655-xor-after-range-multiplication-queries-ii) |
 | [3660-jump-game-ix](https://github.com/SatlasRohit/Leetcode/tree/master/3660-jump-game-ix) |
 | [3689-maximum-total-subarray-value-i](https://github.com/SatlasRohit/Leetcode/tree/master/3689-maximum-total-subarray-value-i) |
+| [3691-maximum-total-subarray-value-ii](https://github.com/SatlasRohit/Leetcode/tree/master/3691-maximum-total-subarray-value-ii) |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/SatlasRohit/Leetcode/tree/master/3740-minimum-distance-between-three-equal-elements-i) |
 ## Simulation
 |  |
@@ -176,6 +177,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/SatlasRohit/Leetcode/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
 | [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/SatlasRohit/Leetcode/tree/master/3635-earliest-finish-time-for-land-and-water-rides-ii) |
 | [3689-maximum-total-subarray-value-i](https://github.com/SatlasRohit/Leetcode/tree/master/3689-maximum-total-subarray-value-i) |
+| [3691-maximum-total-subarray-value-ii](https://github.com/SatlasRohit/Leetcode/tree/master/3691-maximum-total-subarray-value-ii) |
 ## Sorting
 |  |
 | ------- |
@@ -283,6 +285,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0239-sliding-window-maximum](https://github.com/SatlasRohit/Leetcode/tree/master/0239-sliding-window-maximum) |
 | [2099-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/SatlasRohit/Leetcode/tree/master/2099-find-subsequence-of-length-k-with-the-largest-sum) |
 | [3507-minimum-pair-removal-to-sort-array-i](https://github.com/SatlasRohit/Leetcode/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
+| [3691-maximum-total-subarray-value-ii](https://github.com/SatlasRohit/Leetcode/tree/master/3691-maximum-total-subarray-value-ii) |
 ## Math
 |  |
 | ------- |
@@ -491,4 +494,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3161-block-placement-queries](https://github.com/SatlasRohit/Leetcode/tree/master/3161-block-placement-queries) |
+| [3691-maximum-total-subarray-value-ii](https://github.com/SatlasRohit/Leetcode/tree/master/3691-maximum-total-subarray-value-ii) |
 <!---LeetCode Topics End-->
