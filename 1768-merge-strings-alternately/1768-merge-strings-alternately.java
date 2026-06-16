@@ -12,7 +12,6 @@ class Solution {
                 j++;
             }
         }
-        
         return s.toString();
     }
 }
