@@ -152,6 +152,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0796-rotate-string](https://github.com/SatlasRohit/Leetcode/tree/master/0796-rotate-string) |
 | [1143-longest-common-subsequence](https://github.com/SatlasRohit/Leetcode/tree/master/1143-longest-common-subsequence) |
 | [1461-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/SatlasRohit/Leetcode/tree/master/1461-check-if-a-string-contains-all-binary-codes-of-size-k) |
+| [1768-merge-strings-alternately](https://github.com/SatlasRohit/Leetcode/tree/master/1768-merge-strings-alternately) |
 | [1784-check-if-binary-string-has-at-most-one-segment-of-ones](https://github.com/SatlasRohit/Leetcode/tree/master/1784-check-if-binary-string-has-at-most-one-segment-of-ones) |
 | [1871-jump-game-vii](https://github.com/SatlasRohit/Leetcode/tree/master/1871-jump-game-vii) |
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/SatlasRohit/Leetcode/tree/master/1888-minimum-number-of-flips-to-make-the-binary-string-alternating) |
@@ -283,6 +284,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0350-intersection-of-two-arrays-ii](https://github.com/SatlasRohit/Leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0696-count-binary-substrings](https://github.com/SatlasRohit/Leetcode/tree/master/0696-count-binary-substrings) |
 | [0795-number-of-subarrays-with-bounded-maximum](https://github.com/SatlasRohit/Leetcode/tree/master/0795-number-of-subarrays-with-bounded-maximum) |
+| [1768-merge-strings-alternately](https://github.com/SatlasRohit/Leetcode/tree/master/1768-merge-strings-alternately) |
 | [1861-rotating-the-box](https://github.com/SatlasRohit/Leetcode/tree/master/1861-rotating-the-box) |
 | [2095-delete-the-middle-node-of-a-linked-list](https://github.com/SatlasRohit/Leetcode/tree/master/2095-delete-the-middle-node-of-a-linked-list) |
 | [2130-maximum-twin-sum-of-a-linked-list](https://github.com/SatlasRohit/Leetcode/tree/master/2130-maximum-twin-sum-of-a-linked-list) |
