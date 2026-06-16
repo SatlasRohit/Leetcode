@@ -9,6 +9,7 @@ class Solution {
             i++;
             j++;
         }
+        if(i>=len1 && j>=len2) return s;
         if(i<len1){
             for(int k=i;k<len1;k++){
                 s+=word1.charAt(k);
