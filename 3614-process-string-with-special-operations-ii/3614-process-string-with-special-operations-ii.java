@@ -1,51 +1,55 @@
 class Solution {
-
     public char processStr(String s, long k) {
-        long len = 0;
-        for (int i = 0; i < s.length(); i++) {
-            char c = s.charAt(i);
-            switch (c) {
-                case '*':
-                    if (len > 0) {
-                        len--;
-                    }
-                    break;
-                case '#':
-                    len *= 2;
-                    break;
-                case '%':
-                    break;
-                default:
-                    len++;
-                    break;
+        int n = s.length();
+        long[] len = new long[n + 1];
+
+        // Forward pass: compute the length after each operation
+        for (int i = 0; i < n; i++) {
+            char ch = s.charAt(i);
+
+            if (ch == '*') {
+                len[i + 1] = Math.max(0, len[i] - 1);
+            } else if (ch == '#') {
+                len[i + 1] = len[i] * 2;
+            } else if (ch == '%') {
+                len[i + 1] = len[i];
+            } else {
+                len[i + 1] = len[i] + 1;
+            }
+
+            // Prevent overflow
+            if (len[i + 1] > Long.MAX_VALUE / 2) {
+                len[i + 1] = Long.MAX_VALUE;
             }
         }
-        if (k + 1 > len) {
+
+        if (k >= len[n]) {
             return '.';
         }
-        for (int i = s.length() - 1; i >= 0; i--) {
-            char c = s.charAt(i);
-            switch (c) {
-                case '*':
-                    len++;
-                    break;
-                case '#':
-                    if (k + 1 > (len + 1) / 2) {
-                        k -= len / 2;
-                    }
-                    len = (len + 1) / 2;
-                    break;
-                case '%':
-                    k = len - k - 1;
-                    break;
-                default:
-                    if (k + 1 == len) {
-                        return c;
-                    }
-                    len--;
-                    break;
+
+        // Backward pass
+        for (int i = n - 1; i >= 0; i--) {
+            char ch = s.charAt(i);
+
+            if (ch == '*') {
+                // Before '*' the string was one character longer.
+                // k stays the same.
+            } else if (ch == '#') {
+                long prevLen = len[i];
+                k %= prevLen;
+            } else if (ch == '%') {
+                long prevLen = len[i];
+                k = prevLen - 1 - k;
+            } else {
+                long prevLen = len[i];
+
+                if (k == prevLen) {
+                    return ch;
+                }
+                // Otherwise, this character wasn't the one we're looking for.
             }
         }
+
         return '.';
     }
 }
