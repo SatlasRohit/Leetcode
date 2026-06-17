@@ -117,6 +117,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3379-transformed-array](https://github.com/SatlasRohit/Leetcode/tree/master/3379-transformed-array) |
 | [3507-minimum-pair-removal-to-sort-array-i](https://github.com/SatlasRohit/Leetcode/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
 | [3612-process-string-with-special-operations-i](https://github.com/SatlasRohit/Leetcode/tree/master/3612-process-string-with-special-operations-i) |
+| [3614-process-string-with-special-operations-ii](https://github.com/SatlasRohit/Leetcode/tree/master/3614-process-string-with-special-operations-ii) |
 | [3653-xor-after-range-multiplication-queries-i](https://github.com/SatlasRohit/Leetcode/tree/master/3653-xor-after-range-multiplication-queries-i) |
 ## Linked List
 |  |
@@ -164,6 +165,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3120-count-the-number-of-special-characters-i](https://github.com/SatlasRohit/Leetcode/tree/master/3120-count-the-number-of-special-characters-i) |
 | [3121-count-the-number-of-special-characters-ii](https://github.com/SatlasRohit/Leetcode/tree/master/3121-count-the-number-of-special-characters-ii) |
 | [3612-process-string-with-special-operations-i](https://github.com/SatlasRohit/Leetcode/tree/master/3612-process-string-with-special-operations-i) |
+| [3614-process-string-with-special-operations-ii](https://github.com/SatlasRohit/Leetcode/tree/master/3614-process-string-with-special-operations-ii) |
 ## Stack
 |  |
 | ------- |
