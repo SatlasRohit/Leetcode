@@ -64,6 +64,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1594-maximum-non-negative-product-in-a-matrix](https://github.com/SatlasRohit/Leetcode/tree/master/1594-maximum-non-negative-product-in-a-matrix) |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/SatlasRohit/Leetcode/tree/master/1665-minimum-initial-energy-to-finish-tasks) |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/SatlasRohit/Leetcode/tree/master/1674-minimum-moves-to-make-array-complementary) |
+| [1732-find-the-highest-altitude](https://github.com/SatlasRohit/Leetcode/tree/master/1732-find-the-highest-altitude) |
 | [1752-check-if-array-is-sorted-and-rotated](https://github.com/SatlasRohit/Leetcode/tree/master/1752-check-if-array-is-sorted-and-rotated) |
 | [1848-minimum-distance-to-the-target-element](https://github.com/SatlasRohit/Leetcode/tree/master/1848-minimum-distance-to-the-target-element) |
 | [1861-rotating-the-box](https://github.com/SatlasRohit/Leetcode/tree/master/1861-rotating-the-box) |
@@ -495,6 +496,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0238-product-of-array-except-self](https://github.com/SatlasRohit/Leetcode/tree/master/0238-product-of-array-except-self) |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/SatlasRohit/Leetcode/tree/master/1674-minimum-moves-to-make-array-complementary) |
+| [1732-find-the-highest-altitude](https://github.com/SatlasRohit/Leetcode/tree/master/1732-find-the-highest-altitude) |
 | [1871-jump-game-vii](https://github.com/SatlasRohit/Leetcode/tree/master/1871-jump-game-vii) |
 | [2574-left-and-right-sum-differences](https://github.com/SatlasRohit/Leetcode/tree/master/2574-left-and-right-sum-differences) |
 | [3546-equal-sum-grid-partition-i](https://github.com/SatlasRohit/Leetcode/tree/master/3546-equal-sum-grid-partition-i) |
