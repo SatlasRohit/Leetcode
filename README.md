@@ -157,6 +157,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0761-special-binary-string](https://github.com/SatlasRohit/Leetcode/tree/master/0761-special-binary-string) |
 | [0796-rotate-string](https://github.com/SatlasRohit/Leetcode/tree/master/0796-rotate-string) |
 | [1143-longest-common-subsequence](https://github.com/SatlasRohit/Leetcode/tree/master/1143-longest-common-subsequence) |
+| [1189-maximum-number-of-balloons](https://github.com/SatlasRohit/Leetcode/tree/master/1189-maximum-number-of-balloons) |
 | [1461-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/SatlasRohit/Leetcode/tree/master/1461-check-if-a-string-contains-all-binary-codes-of-size-k) |
 | [1768-merge-strings-alternately](https://github.com/SatlasRohit/Leetcode/tree/master/1768-merge-strings-alternately) |
 | [1784-check-if-binary-string-has-at-most-one-segment-of-ones](https://github.com/SatlasRohit/Leetcode/tree/master/1784-check-if-binary-string-has-at-most-one-segment-of-ones) |
@@ -228,6 +229,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0169-majority-element](https://github.com/SatlasRohit/Leetcode/tree/master/0169-majority-element) |
 | [0561-array-partition](https://github.com/SatlasRohit/Leetcode/tree/master/0561-array-partition) |
 | [1122-relative-sort-array](https://github.com/SatlasRohit/Leetcode/tree/master/1122-relative-sort-array) |
+| [1189-maximum-number-of-balloons](https://github.com/SatlasRohit/Leetcode/tree/master/1189-maximum-number-of-balloons) |
 | [1356-sort-integers-by-the-number-of-1-bits](https://github.com/SatlasRohit/Leetcode/tree/master/1356-sort-integers-by-the-number-of-1-bits) |
 | [2833-furthest-point-from-origin](https://github.com/SatlasRohit/Leetcode/tree/master/2833-furthest-point-from-origin) |
 ## Hash Table
@@ -245,6 +247,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/SatlasRohit/Leetcode/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
 | [0961-n-repeated-element-in-size-2n-array](https://github.com/SatlasRohit/Leetcode/tree/master/0961-n-repeated-element-in-size-2n-array) |
 | [1122-relative-sort-array](https://github.com/SatlasRohit/Leetcode/tree/master/1122-relative-sort-array) |
+| [1189-maximum-number-of-balloons](https://github.com/SatlasRohit/Leetcode/tree/master/1189-maximum-number-of-balloons) |
 | [1345-jump-game-iv](https://github.com/SatlasRohit/Leetcode/tree/master/1345-jump-game-iv) |
 | [1461-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/SatlasRohit/Leetcode/tree/master/1461-check-if-a-string-contains-all-binary-codes-of-size-k) |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/SatlasRohit/Leetcode/tree/master/1674-minimum-moves-to-make-array-complementary) |
