@@ -53,6 +53,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0896-monotonic-array](https://github.com/SatlasRohit/Leetcode/tree/master/0896-monotonic-array) |
 | [0961-n-repeated-element-in-size-2n-array](https://github.com/SatlasRohit/Leetcode/tree/master/0961-n-repeated-element-in-size-2n-array) |
 | [0977-squares-of-a-sorted-array](https://github.com/SatlasRohit/Leetcode/tree/master/0977-squares-of-a-sorted-array) |
+| [1089-duplicate-zeros](https://github.com/SatlasRohit/Leetcode/tree/master/1089-duplicate-zeros) |
 | [1122-relative-sort-array](https://github.com/SatlasRohit/Leetcode/tree/master/1122-relative-sort-array) |
 | [1306-jump-game-iii](https://github.com/SatlasRohit/Leetcode/tree/master/1306-jump-game-iii) |
 | [1340-jump-game-v](https://github.com/SatlasRohit/Leetcode/tree/master/1340-jump-game-v) |
@@ -299,6 +300,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0696-count-binary-substrings](https://github.com/SatlasRohit/Leetcode/tree/master/0696-count-binary-substrings) |
 | [0795-number-of-subarrays-with-bounded-maximum](https://github.com/SatlasRohit/Leetcode/tree/master/0795-number-of-subarrays-with-bounded-maximum) |
 | [0977-squares-of-a-sorted-array](https://github.com/SatlasRohit/Leetcode/tree/master/0977-squares-of-a-sorted-array) |
+| [1089-duplicate-zeros](https://github.com/SatlasRohit/Leetcode/tree/master/1089-duplicate-zeros) |
 | [1768-merge-strings-alternately](https://github.com/SatlasRohit/Leetcode/tree/master/1768-merge-strings-alternately) |
 | [1861-rotating-the-box](https://github.com/SatlasRohit/Leetcode/tree/master/1861-rotating-the-box) |
 | [2095-delete-the-middle-node-of-a-linked-list](https://github.com/SatlasRohit/Leetcode/tree/master/2095-delete-the-middle-node-of-a-linked-list) |
