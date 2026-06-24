@@ -1,87 +1,75 @@
 class Solution {
-
-    private static final long MOD = 1_000_000_007L;
-
-    static class Matrix {
-
-        int n, m;
-        long[] data;
-
-        Matrix(int n, int m) {
-            this.n = n;
-            this.m = m;
-            this.data = new long[n * m];
-        }
-
-        long get(int i, int j) {
-            return data[i * m + j];
-        }
-
-        void set(int i, int j, long val) {
-            data[i * m + j] = val;
-        }
-
-        Matrix mul(Matrix b) {
-            Matrix res = new Matrix(n, b.m);
-            for (int i = 0; i < n; i++) {
-                for (int k = 0; k < m; k++) {
-                    long r = this.get(i, k);
-                    if (r == 0) {
-                        continue;
-                    }
-
-                    for (int j = 0; j < b.m; j++) {
-                        res.set(i, j, (res.get(i, j) + r * b.get(k, j)) % MOD);
-                    }
-                }
+    public int zigZagArrays(int n, int l, int r) {
+        int len = r - l + 1;
+        long[][] m1 = new long[len][len];
+        long[][] m2 = new long[len][len];
+        for (int i = 0; i < len; i++) {
+            for (int j = i + 1; j < len; j++) {
+                m1[i][j] = 1;
             }
-            return res;
-        }
-
-        Matrix pow(long exp, Matrix res) {
-            Matrix base = new Matrix(n, m);
-            System.arraycopy(this.data, 0, base.data, 0, this.data.length);
-
-            while (exp > 0) {
-                if ((exp & 1L) == 1L) {
-                    res = res.mul(base);
-                }
-                base = base.mul(base);
-                exp >>= 1L;
+            for (int j = 0; j < i; j++) {
+                m2[i][j] = 1;
             }
-            return res;
         }
+        long[][] m = pro(m1, m2);
+        long[] arr = new long[len];
+        Arrays.fill(arr, 1);
+        n--;
+        int count = n / 2;
+        while (count > 0) {
+            if (count % 2 == 1)
+                arr = pro(arr, m);
+            m = pro(m);
+            count /= 2;
+        }
+        if (n % 2 == 1)
+            arr = pro(arr, m1);
+        long res = 0;
+        for (long num : arr) {
+            res += num;
+        }
+        return (int) (res * 2 % mod);
     }
 
-    public int zigZagArrays(int n, int l, int r) {
-        int m = r - l + 1;
-        if (n == 1) {
-            return m;
-        }
+    int mod = 1_000_000_007;
 
-        Matrix u = new Matrix(2 * m, 2 * m);
-
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < i; j++) {
-                u.set(i, j + m, 1L);
-            }
-            for (int j = i + 1; j < m; j++) {
-                u.set(i + m, j, 1L);
+    public long[][] pro(long[][] a) {
+        long[][] res = new long[a.length][a[0].length];
+        for (int i = 0; i < res.length; i++) {
+            for (int k = 0; k < res.length; k++) {
+                if (a[i][k] == 0)
+                    continue;
+                for (int j = 0; j < res.length; j++) {
+                    res[i][j] = (res[i][j] + a[i][k] * a[k][j]) % mod;
+                }
             }
         }
+        return res;
+    }
 
-        Matrix dp = new Matrix(1, 2 * m);
-        for (int i = 0; i < 2 * m; i++) {
-            dp.set(0, i, 1L);
+    public long[][] pro(long[][] a, long[][] b) {
+        long[][] res = new long[a.length][a[0].length];
+        for (int i = 0; i < res.length; i++) {
+            for (int k = 0; k < res.length; k++) {
+                if (a[i][k] == 0)
+                    continue;
+                for (int j = 0; j < res.length; j++) {
+                    res[i][j] = (res[i][j] + a[i][k] * b[k][j]) % mod;
+                }
+            }
         }
+        return res;
+    }
 
-        dp = u.pow(n - 1, dp);
-
-        long ans = 0;
-        for (int i = 0; i < 2 * m; i++) {
-            ans = (ans + dp.get(0, i)) % MOD;
+    public long[] pro(long[] a, long[][] b) {
+        long[] res = new long[a.length];
+        for (int j = 0; j < res.length; j++) {
+            if (a[j] == 0)
+                continue;
+            for (int i = 0; i < res.length; i++) {
+                res[i] = (res[i] + a[j] * b[j][i]) % mod;
+            }
         }
-
-        return (int) ans;
+        return res;
     }
 }
