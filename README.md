@@ -75,6 +75,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1914-cyclically-rotating-a-grid](https://github.com/SatlasRohit/Leetcode/tree/master/1914-cyclically-rotating-a-grid) |
 | [1920-build-array-from-permutation](https://github.com/SatlasRohit/Leetcode/tree/master/1920-build-array-from-permutation) |
 | [1929-concatenation-of-array](https://github.com/SatlasRohit/Leetcode/tree/master/1929-concatenation-of-array) |
+| [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/SatlasRohit/Leetcode/tree/master/1967-number-of-strings-that-appear-as-substrings-in-word) |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/SatlasRohit/Leetcode/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
 | [2099-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/SatlasRohit/Leetcode/tree/master/2099-find-subsequence-of-length-k-with-the-largest-sum) |
 | [2126-destroying-asteroids](https://github.com/SatlasRohit/Leetcode/tree/master/2126-destroying-asteroids) |
@@ -168,6 +169,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1871-jump-game-vii](https://github.com/SatlasRohit/Leetcode/tree/master/1871-jump-game-vii) |
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/SatlasRohit/Leetcode/tree/master/1888-minimum-number-of-flips-to-make-the-binary-string-alternating) |
 | [1935-maximum-number-of-words-you-can-type](https://github.com/SatlasRohit/Leetcode/tree/master/1935-maximum-number-of-words-you-can-type) |
+| [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/SatlasRohit/Leetcode/tree/master/1967-number-of-strings-that-appear-as-substrings-in-word) |
 | [2833-furthest-point-from-origin](https://github.com/SatlasRohit/Leetcode/tree/master/2833-furthest-point-from-origin) |
 | [2839-check-if-strings-can-be-made-equal-with-operations-i](https://github.com/SatlasRohit/Leetcode/tree/master/2839-check-if-strings-can-be-made-equal-with-operations-i) |
 | [3093-longest-common-suffix-queries](https://github.com/SatlasRohit/Leetcode/tree/master/3093-longest-common-suffix-queries) |
