@@ -1,62 +1,20 @@
 class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
-
-        List<List<Integer>> triplets = new ArrayList<>();
-
-        Arrays.sort(nums);
-
+        HashSet<ArrayList<Integer>> set = new HashSet<>();
         int n = nums.length;
-
-        for (int i = 0; i < n - 2; i++) {
-
-            // Skip duplicate first elements
-            if (i > 0 && nums[i] == nums[i - 1]) {
-                continue;
-            }
-
-            int left = i + 1;
-            int right = n - 1;
-
-            while (left < right) {
-
-                int sum = nums[i] + nums[left] + nums[right];
-
-                if (sum == 0) {
-
-                    triplets.add(
-                        Arrays.asList(
-                            nums[i],
-                            nums[left],
-                            nums[right]
-                        )
-                    );
-
-                    left++;
-                    right--;
-
-                    // Skip duplicate left values
-                    while (left < right &&
-                           nums[left] == nums[left - 1]) {
-                        left++;
-                    }
-
-                    // Skip duplicate right values
-                    while (left < right &&
-                           nums[right] == nums[right + 1]) {
-                        right--;
-                    }
-
-                } else if (sum < 0) {
-
-                    left++;
-
-                } else {
-
-                    right--;
+        for(int i=0;i<n-1;i++){
+            HashSet<Integer> st = new HashSet<>();
+            for(int j=i+1;j<n;j++){
+                int k = -(nums[i]+nums[j]);
+                if(st.contains(k)){
+                    ArrayList<Integer> list = new ArrayList<>(Arrays.asList(nums[i],nums[j],k));
+                    Collections.sort(list);
+                    set.add(list);
                 }
+                st.add(nums[j]);
             }
         }
-
+        List<List<Integer>> triplets = new ArrayList<>(set);
         return triplets;
     }
 }
