@@ -92,6 +92,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/SatlasRohit/Leetcode/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
 | [3093-longest-common-suffix-queries](https://github.com/SatlasRohit/Leetcode/tree/master/3093-longest-common-suffix-queries) |
 | [3161-block-placement-queries](https://github.com/SatlasRohit/Leetcode/tree/master/3161-block-placement-queries) |
+| [3286-find-a-safe-walk-through-a-grid](https://github.com/SatlasRohit/Leetcode/tree/master/3286-find-a-safe-walk-through-a-grid) |
 | [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/SatlasRohit/Leetcode/tree/master/3300-minimum-element-after-replacement-with-digit-sum) |
 | [3379-transformed-array](https://github.com/SatlasRohit/Leetcode/tree/master/3379-transformed-array) |
 | [3418-maximum-amount-of-money-robot-can-earn](https://github.com/SatlasRohit/Leetcode/tree/master/3418-maximum-amount-of-money-robot-can-earn) |
@@ -329,6 +330,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0239-sliding-window-maximum](https://github.com/SatlasRohit/Leetcode/tree/master/0239-sliding-window-maximum) |
 | [2099-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/SatlasRohit/Leetcode/tree/master/2099-find-subsequence-of-length-k-with-the-largest-sum) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/SatlasRohit/Leetcode/tree/master/2812-find-the-safest-path-in-a-grid) |
+| [3286-find-a-safe-walk-through-a-grid](https://github.com/SatlasRohit/Leetcode/tree/master/3286-find-a-safe-walk-through-a-grid) |
 | [3507-minimum-pair-removal-to-sort-array-i](https://github.com/SatlasRohit/Leetcode/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
 | [3691-maximum-total-subarray-value-ii](https://github.com/SatlasRohit/Leetcode/tree/master/3691-maximum-total-subarray-value-ii) |
 ## Math
@@ -402,6 +404,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/SatlasRohit/Leetcode/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/SatlasRohit/Leetcode/tree/master/2812-find-the-safest-path-in-a-grid) |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/SatlasRohit/Leetcode/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
+| [3286-find-a-safe-walk-through-a-grid](https://github.com/SatlasRohit/Leetcode/tree/master/3286-find-a-safe-walk-through-a-grid) |
 | [3418-maximum-amount-of-money-robot-can-earn](https://github.com/SatlasRohit/Leetcode/tree/master/3418-maximum-amount-of-money-robot-can-earn) |
 | [3546-equal-sum-grid-partition-i](https://github.com/SatlasRohit/Leetcode/tree/master/3546-equal-sum-grid-partition-i) |
 ## Dynamic Programming
@@ -521,6 +524,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1306-jump-game-iii](https://github.com/SatlasRohit/Leetcode/tree/master/1306-jump-game-iii) |
 | [1345-jump-game-iv](https://github.com/SatlasRohit/Leetcode/tree/master/1345-jump-game-iv) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/SatlasRohit/Leetcode/tree/master/2812-find-the-safest-path-in-a-grid) |
+| [3286-find-a-safe-walk-through-a-grid](https://github.com/SatlasRohit/Leetcode/tree/master/3286-find-a-safe-walk-through-a-grid) |
 | [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/SatlasRohit/Leetcode/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
 ## Enumeration
 |  |
@@ -579,4 +583,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/SatlasRohit/Leetcode/tree/master/2812-find-the-safest-path-in-a-grid) |
+## Graph Theory
+|  |
+| ------- |
+| [3286-find-a-safe-walk-through-a-grid](https://github.com/SatlasRohit/Leetcode/tree/master/3286-find-a-safe-walk-through-a-grid) |
+## Shortest Path
+|  |
+| ------- |
+| [3286-find-a-safe-walk-through-a-grid](https://github.com/SatlasRohit/Leetcode/tree/master/3286-find-a-safe-walk-through-a-grid) |
 <!---LeetCode Topics End-->
