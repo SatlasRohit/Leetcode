@@ -1,78 +1,73 @@
 class Solution {
-
+    private int[] head, next, to, weight;
+    private long k;
+    private int n;
     public int findMaxPathScore(int[][] edges, boolean[] online, long k) {
-        int n = online.length;
-        List<List<int[]>> g = new ArrayList<>();
-        for (int i = 0; i < n; i++) {
-            g.add(new ArrayList<>());
-        }
+        this.n = online.length;
+        this.k = k;
 
-        int l = Integer.MAX_VALUE;
-        int r = 0;
-        for (int[] edge : edges) {
-            int u = edge[0];
-            int v = edge[1];
-            int w = edge[2];
-            if (!online[u] || !online[v]) {
-                continue;
-            }
-            g.get(u).add(new int[] { v, w });
-            l = Math.min(l, w);
-            r = Math.max(r, w);
-        }
+        int m = edges.length;
+        this.head = new int[n];
+        this.next = new int[m];
+        this.to = new int[m];
+        this.weight = new int[m];
+        Arrays.fill(head, -1);
+        int left = Integer.MAX_VALUE, right = 0;
+        for(int i = 0; i < m; i++) {
+            int a = edges[i][0], b = edges[i][1], c = edges[i][2];
+            if(online[a] && online[b]) {
+                to[i] = b;
+                next[i] = head[a];
+                weight[i] = c;
+                head[a] = i;
 
-        if (!check(g, l, k, n)) {
-            return -1;
-        }
-
-        while (l <= r) {
-            int mid = (l + r) >> 1;
-            if (check(g, mid, k, n)) {
-                l = mid + 1;
-            } else {
-                r = mid - 1;
+                if(c > right) right = c;
+                if(c < left) left = c;
             }
         }
-        return r;
+
+        if(!check(0)) return -1;
+
+        while(left < right) {
+            int mid = left + right + 1 >>> 1;
+            if(check(mid)) left = mid;
+            else right = mid - 1;
+        }
+        return left;
     }
 
-    private boolean check(List<List<int[]>> g, int mid, long k, int n) {
-        long[] dis = new long[n];
-        Arrays.fill(dis, Long.MAX_VALUE);
-        PriorityQueue<long[]> pq = new PriorityQueue<>((a, b) ->
-            Long.compare(a[0], b[0])
-        );
+    private static final int[] queue = new int[50001];
+    private static final long[] sum = new long[50001];
+    private boolean check(int threshold) {
+        long[] dist = new long[n];
+        Arrays.fill(dist, k + 1);
+        dist[0] = 0;
 
-        dis[0] = 0;
-        pq.offer(new long[] { 0, 0 });
-
-        while (!pq.isEmpty()) {
-            long[] top = pq.poll();
-            long d = top[0];
-            int u = (int) top[1];
-
-            if (d > k) {
-                return false;
-            }
-            if (u == n - 1) {
-                return true;
-            }
-            if (d > dis[u]) {
-                continue;
-            }
-
-            for (int[] edge : g.get(u)) {
-                int v = edge[0];
-                int w = edge[1];
-                if (w < mid) {
-                    continue;
-                }
-                if (dis[v] > dis[u] + w) {
-                    dis[v] = dis[u] + w;
-                    pq.offer(new long[] { dis[v], v });
+        int read = 0, write = 1;
+        while(read < write) {
+            int current = queue[read];
+            long val = sum[read++];
+            if(val > dist[current]) continue;
+            for(int i = head[current]; i != -1; i = next[i]) {
+                if(weight[i] < threshold) continue;
+                int nextIndex = to[i];
+                long d = val + weight[i];
+                if(d < dist[nextIndex]) {
+                    if(nextIndex == n - 1) return true;
+                    dist[nextIndex] = d;
+                    sum[write] = d;
+                    queue[write++] = nextIndex;
                 }
             }
         }
         return false;
+    }
+    private static final class Node {
+        private final int index;
+        private final long dist;
+        private Node(int index, long dist) {
+            this.index = index;
+            this.dist = dist;
+        }
     }
 }
