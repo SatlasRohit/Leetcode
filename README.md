@@ -56,6 +56,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0977-squares-of-a-sorted-array](https://github.com/SatlasRohit/Leetcode/tree/master/0977-squares-of-a-sorted-array) |
 | [1089-duplicate-zeros](https://github.com/SatlasRohit/Leetcode/tree/master/1089-duplicate-zeros) |
 | [1122-relative-sort-array](https://github.com/SatlasRohit/Leetcode/tree/master/1122-relative-sort-array) |
+| [1301-number-of-paths-with-max-score](https://github.com/SatlasRohit/Leetcode/tree/master/1301-number-of-paths-with-max-score) |
 | [1306-jump-game-iii](https://github.com/SatlasRohit/Leetcode/tree/master/1306-jump-game-iii) |
 | [1340-jump-game-v](https://github.com/SatlasRohit/Leetcode/tree/master/1340-jump-game-v) |
 | [1345-jump-game-iv](https://github.com/SatlasRohit/Leetcode/tree/master/1345-jump-game-iv) |
@@ -402,6 +403,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0073-set-matrix-zeroes](https://github.com/SatlasRohit/Leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0566-reshape-the-matrix](https://github.com/SatlasRohit/Leetcode/tree/master/0566-reshape-the-matrix) |
 | [0766-toeplitz-matrix](https://github.com/SatlasRohit/Leetcode/tree/master/0766-toeplitz-matrix) |
+| [1301-number-of-paths-with-max-score](https://github.com/SatlasRohit/Leetcode/tree/master/1301-number-of-paths-with-max-score) |
 | [1582-special-positions-in-a-binary-matrix](https://github.com/SatlasRohit/Leetcode/tree/master/1582-special-positions-in-a-binary-matrix) |
 | [1594-maximum-non-negative-product-in-a-matrix](https://github.com/SatlasRohit/Leetcode/tree/master/1594-maximum-non-negative-product-in-a-matrix) |
 | [1861-rotating-the-box](https://github.com/SatlasRohit/Leetcode/tree/master/1861-rotating-the-box) |
@@ -426,6 +428,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0509-fibonacci-number](https://github.com/SatlasRohit/Leetcode/tree/master/0509-fibonacci-number) |
 | [0788-rotated-digits](https://github.com/SatlasRohit/Leetcode/tree/master/0788-rotated-digits) |
 | [1143-longest-common-subsequence](https://github.com/SatlasRohit/Leetcode/tree/master/1143-longest-common-subsequence) |
+| [1301-number-of-paths-with-max-score](https://github.com/SatlasRohit/Leetcode/tree/master/1301-number-of-paths-with-max-score) |
 | [1340-jump-game-v](https://github.com/SatlasRohit/Leetcode/tree/master/1340-jump-game-v) |
 | [1411-number-of-ways-to-paint-n-3-grid](https://github.com/SatlasRohit/Leetcode/tree/master/1411-number-of-ways-to-paint-n-3-grid) |
 | [1594-maximum-non-negative-product-in-a-matrix](https://github.com/SatlasRohit/Leetcode/tree/master/1594-maximum-non-negative-product-in-a-matrix) |
