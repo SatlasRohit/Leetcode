@@ -1,6 +1,6 @@
 class Solution {
     public long sumAndMultiply(int n) {
-        long x = 0;
+        int x = 0;
         int sum=0;
         int mul = 1;
         while(n>0){
@@ -12,6 +12,6 @@ class Solution {
             }
             n/=10;
         }
-        return x*sum;
+        return (long)x*sum;
     }
 }
