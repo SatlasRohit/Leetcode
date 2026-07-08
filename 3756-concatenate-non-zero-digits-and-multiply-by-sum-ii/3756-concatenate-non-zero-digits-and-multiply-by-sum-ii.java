@@ -1,111 +1,49 @@
 class Solution {
-
-    static final long MOD = 1_000_000_007L;
-
-    class Node {
-        long value;
-        long sum;
-        int count;
-
-        Node(long value, long sum, int count) {
-            this.value = value;
-            this.sum = sum;
-            this.count = count;
-        }
-    }
-
-    Node[] tree;
-    long[] pow10;
-    String s;
-
     public int[] sumAndMultiply(String s, int[][] queries) {
-
-        this.s = s;
-        int n = s.length();
-
-        tree = new Node[4 * n];
-
-        pow10 = new long[n + 1];
-        pow10[0] = 1;
-
-        for (int i = 1; i <= n; i++) {
-            pow10[i] = (pow10[i - 1] * 10) % MOD;
-        }
-
-        build(1, 0, n - 1);
-
-        int[] ans = new int[queries.length];
-
-        for (int i = 0; i < queries.length; i++) {
-
-            Node cur = query(
-                    1,
-                    0,
-                    n - 1,
-                    queries[i][0],
-                    queries[i][1]
-            );
-
-            ans[i] = (int) ((cur.value * cur.sum) % MOD);
-        }
-
-        return ans;
-    }
-
-    private void build(int idx, int l, int r) {
-
-        if (l == r) {
-
-            int d = s.charAt(l) - '0';
-
-            if (d == 0) {
-                tree[idx] = new Node(0, 0, 0);
+        long MOD = 1_000_000_007;
+        int len = s.length();
+        
+        long[] preSum = new long[len + 1];
+        long[] preProduct = new long[len + 1];
+        int[] nonZeroCnt = new int[len + 1];
+        long[] p10 = new long[len + 1];
+        
+        // 预处理 10 的次幂取模
+        p10[0] = 1;
+        for (int i = 0; i < len; i++) {
+            p10[i + 1] = (p10[i] * 10) % MOD;
+            
+            int digit = s.charAt(i) - '0';
+            preSum[i + 1] = preSum[i] + digit;
+            
+            if (digit == 0) {
+                preProduct[i + 1] = preProduct[i];
+                nonZeroCnt[i + 1] = nonZeroCnt[i];
             } else {
-                tree[idx] = new Node(d, d, 1);
+                preProduct[i + 1] = (preProduct[i] * 10 + digit) % MOD;
+                nonZeroCnt[i + 1] = nonZeroCnt[i] + 1;
             }
-
-            return;
         }
-
-        int mid = (l + r) / 2;
-
-        build(idx * 2, l, mid);
-        build(idx * 2 + 1, mid + 1, r);
-
-        tree[idx] = merge(tree[idx * 2], tree[idx * 2 + 1]);
-    }
-
-    private Node merge(Node left, Node right) {
-
-        long value =
-                (left.value * pow10[right.count] + right.value) % MOD;
-
-        long sum = left.sum + right.sum;
-
-        int count = left.count + right.count;
-
-        return new Node(value, sum, count);
-    }
-
-    private Node query(int idx, int l, int r, int ql, int qr) {
-
-        if (ql <= l && r <= qr) {
-            return tree[idx];
+        
+        int[] res = new int[queries.length];
+        for (int i = 0; i < queries.length; i++) {
+            int start = queries[i][0];
+            int end = queries[i][1];
+            
+            // 区间数字和
+            long sum = preSum[end + 1] - preSum[start];
+            
+            // 区间非零数字个数
+            int cnt = nonZeroCnt[end + 1] - nonZeroCnt[start];
+            
+            // 计算拼接后的数字 x
+            long subtract = (preProduct[start] * p10[cnt]) % MOD;
+            long x = (preProduct[end + 1] - subtract + MOD) % MOD;
+            
+            // 最终结果相乘再取模
+            res[i] = (int) ((x * sum) % MOD);
         }
-
-        int mid = (l + r) / 2;
-
-        if (qr <= mid) {
-            return query(idx * 2, l, mid, ql, qr);
-        }
-
-        if (ql > mid) {
-            return query(idx * 2 + 1, mid + 1, r, ql, qr);
-        }
-
-        Node left = query(idx * 2, l, mid, ql, qr);
-        Node right = query(idx * 2 + 1, mid + 1, r, ql, qr);
-
-        return merge(left, right);
+        
+        return res;
     }
 }
