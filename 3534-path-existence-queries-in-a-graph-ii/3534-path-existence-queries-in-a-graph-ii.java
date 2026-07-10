@@ -1,77 +1,44 @@
 class Solution {
+    public int[] pathExistenceQueries(int n, int[] nums, int maxDiff, int[][] queries) {
+        int m = queries.length, l = 1;
+        int[] ans = new int[m];
+        long[] sorted = new long[n];
+        for(int i = 0; i < n; i++) sorted[i] = (long)nums[i] << 32 | i;
+        Arrays.sort(sorted);
 
-    public int[] pathExistenceQueries(
-        int n,
-        int[] nums,
-        int maxDiff,
-        int[][] queries
-    ) {
-        int[] idx = new int[n];
-        int[] pos = new int[n];
+        for(int i = 1; i < n; i <<= 1) l++;
+        int[][] jumps = new int[l][n];
 
-        for (int i = 0; i < n; i++) {
-            idx[i] = i;
+        int[] rank = new int[n];
+        int right = 0;
+        for(int i = 0; i < n; i++) {
+            rank[(int)sorted[i]] = i;
+            while(right < n && (sorted[right] >>> 32) <= (sorted[i] >>> 32) + maxDiff) right++;
+            jumps[0][i] = right - 1;
         }
-
-        Integer[] ord = new Integer[n];
-        for (int i = 0; i < n; i++) {
-            ord[i] = i;
+        for(int i = 1; i < l; i++) {
+            for(int j = 0; j < n; j++) jumps[i][j] = jumps[i - 1][jumps[i - 1][j]];
         }
-
-        Arrays.sort(ord, (a, b) -> Integer.compare(nums[a], nums[b]));
-
-        for (int i = 0; i < n; i++) {
-            idx[i] = ord[i];
-            pos[idx[i]] = i;
-        }
-
-        int m = 32 - Integer.numberOfLeadingZeros(n);
-
-        int[][] f = new int[n][m];
-
-        int left = 0;
-        for (int i = 0; i < n; i++) {
-            while (left < i && nums[idx[i]] - nums[idx[left]] > maxDiff) {
-                left++;
+        for(int i = 0; i < m; i++) {
+            int a = rank[queries[i][0]], b = rank[queries[i][1]];
+            if(a > b) {
+                int temp = a;
+                a = b;
+                b = temp;
             }
-            f[i][0] = left;
+            ans[i] = jumps[l - 1][a] < b ? -1 : calcJumps(jumps, a, b, l);
         }
-
-        for (int j = 1; j < m; j++) {
-            for (int i = 0; i < n; i++) {
-                f[i][j] = f[f[i][j - 1]][j - 1];
-            }
-        }
-
-        int[] ans = new int[queries.length];
-
-        for (int k = 0; k < queries.length; k++) {
-            int x = pos[queries[k][0]];
-            int y = pos[queries[k][1]];
-
-            if (x > y) {
-                int t = x;
-                x = y;
-                y = t;
-            }
-
-            if (x == y) {
-                ans[k] = 0;
-                continue;
-            }
-
-            int step = 0;
-
-            for (int i = m - 1; i >= 0; i--) {
-                if (f[y][i] > x) {
-                    y = f[y][i];
-                    step += 1 << i;
-                }
-            }
-
-            ans[k] = f[y][0] <= x ? step + 1 : -1;
-        }
-
         return ans;
+    }
+    private int calcJumps(int[][] jumps, int a, int b, int right) {
+        if(a == b) return 0;
+        if(jumps[0][a] >= b) return 1;
+        int left = 0;
+        while(left < right) {
+            int mid = left + right + 1 >>> 1;
+            if(jumps[mid][a] < b) left = mid;
+            else right = mid - 1;
+        }
+        return (1 << left) + calcJumps(jumps, jumps[left][a], b, left);
     }
 }
