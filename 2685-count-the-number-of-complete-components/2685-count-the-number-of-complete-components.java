@@ -1,44 +1,58 @@
-public class Solution {
-
+class Solution {
     public int countCompleteComponents(int n, int[][] edges) {
-        // Adjacency lists for each vertex
-        List<Integer>[] graph = new ArrayList[n];
-        // Map to store frequency of each unique adjacency list
-        Map<List<Integer>, Integer> componentFreq = new HashMap<>();
-
-        // Initialize adjacency lists with self-loops
-        for (int vertex = 0; vertex < n; vertex++) {
-            graph[vertex] = new ArrayList<>();
-            graph[vertex].add(vertex);
+        int[] parent = new int[n];
+        int[] nodeCount = new int[n];
+        int[] edgeCount = new int[n];
+        
+        // Initialize each node to be its own parent, with 1 node and 0 edges
+        for (int i = 0; i < n; i++) {
+            parent[i] = i;
+            nodeCount[i] = 1;
         }
-
-        // Build adjacency lists from edges
+        
+        // Union find tracking
         for (int[] edge : edges) {
-            graph[edge[0]].add(edge[1]);
-            graph[edge[1]].add(edge[0]);
-        }
-
-        // Count frequency of each unique adjacency pattern
-        for (int vertex = 0; vertex < n; vertex++) {
-            List<Integer> neighbors = graph[vertex];
-            Collections.sort(neighbors);
-            componentFreq.put(
-                neighbors,
-                componentFreq.getOrDefault(neighbors, 0) + 1
-            );
-        }
-
-        // Count complete components where size equals frequency
-        int completeCount = 0;
-        for (Map.Entry<
-            List<Integer>,
-            Integer
-        > entry : componentFreq.entrySet()) {
-            if (entry.getKey().size() == entry.getValue()) {
-                completeCount++;
+            int u = edge[0];
+            int v = edge[1];
+            
+            int rootU = find(u, parent);
+            int rootV = find(v, parent);
+            
+            if (rootU != rootV) {
+                // Merge group V into group U
+                parent[rootV] = rootU;
+                nodeCount[rootU] += nodeCount[rootV];
+                edgeCount[rootU] += edgeCount[rootV] + 1; // Add this new connecting edge
+            } else {
+                // u and v are already in the same group; this is a redundant edge within it
+                edgeCount[rootU]++;
             }
         }
-
-        return completeCount;
+        
+        int completeComponents = 0;
+        
+        // Check the roots of all components
+        for (int i = 0; i < n; i++) {
+            if (parent[i] == i) { // This node is the leader of its component
+                int nodes = nodeCount[i];
+                int totalEdges = edgeCount[i];
+                
+                // Since DSU processes edges once, no double counting occurs.
+                // Formula: E == V * (V - 1) / 2
+                if (totalEdges == (nodes * (nodes - 1)) / 2) {
+                    completeComponents++;
+                }
+            }
+        }
+        
+        return completeComponents;
+    }
+    
+    // Find with path compression
+    private int find(int i, int[] parent) {
+        if (parent[i] == i) {
+            return i;
+        }
+        return parent[i] = find(parent[i], parent);
     }
 }
