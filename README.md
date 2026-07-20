@@ -58,6 +58,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0977-squares-of-a-sorted-array](https://github.com/SatlasRohit/Leetcode/tree/master/0977-squares-of-a-sorted-array) |
 | [1089-duplicate-zeros](https://github.com/SatlasRohit/Leetcode/tree/master/1089-duplicate-zeros) |
 | [1122-relative-sort-array](https://github.com/SatlasRohit/Leetcode/tree/master/1122-relative-sort-array) |
+| [1260-shift-2d-grid](https://github.com/SatlasRohit/Leetcode/tree/master/1260-shift-2d-grid) |
 | [1288-remove-covered-intervals](https://github.com/SatlasRohit/Leetcode/tree/master/1288-remove-covered-intervals) |
 | [1301-number-of-paths-with-max-score](https://github.com/SatlasRohit/Leetcode/tree/master/1301-number-of-paths-with-max-score) |
 | [1306-jump-game-iii](https://github.com/SatlasRohit/Leetcode/tree/master/1306-jump-game-iii) |
@@ -130,6 +131,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0054-spiral-matrix](https://github.com/SatlasRohit/Leetcode/tree/master/0054-spiral-matrix) |
 | [0566-reshape-the-matrix](https://github.com/SatlasRohit/Leetcode/tree/master/0566-reshape-the-matrix) |
 | [0657-robot-return-to-origin](https://github.com/SatlasRohit/Leetcode/tree/master/0657-robot-return-to-origin) |
+| [1260-shift-2d-grid](https://github.com/SatlasRohit/Leetcode/tree/master/1260-shift-2d-grid) |
 | [1441-build-an-array-with-stack-operations](https://github.com/SatlasRohit/Leetcode/tree/master/1441-build-an-array-with-stack-operations) |
 | [1914-cyclically-rotating-a-grid](https://github.com/SatlasRohit/Leetcode/tree/master/1914-cyclically-rotating-a-grid) |
 | [1920-build-array-from-permutation](https://github.com/SatlasRohit/Leetcode/tree/master/1920-build-array-from-permutation) |
@@ -437,6 +439,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0073-set-matrix-zeroes](https://github.com/SatlasRohit/Leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0566-reshape-the-matrix](https://github.com/SatlasRohit/Leetcode/tree/master/0566-reshape-the-matrix) |
 | [0766-toeplitz-matrix](https://github.com/SatlasRohit/Leetcode/tree/master/0766-toeplitz-matrix) |
+| [1260-shift-2d-grid](https://github.com/SatlasRohit/Leetcode/tree/master/1260-shift-2d-grid) |
 | [1301-number-of-paths-with-max-score](https://github.com/SatlasRohit/Leetcode/tree/master/1301-number-of-paths-with-max-score) |
 | [1582-special-positions-in-a-binary-matrix](https://github.com/SatlasRohit/Leetcode/tree/master/1582-special-positions-in-a-binary-matrix) |
 | [1594-maximum-non-negative-product-in-a-matrix](https://github.com/SatlasRohit/Leetcode/tree/master/1594-maximum-non-negative-product-in-a-matrix) |
