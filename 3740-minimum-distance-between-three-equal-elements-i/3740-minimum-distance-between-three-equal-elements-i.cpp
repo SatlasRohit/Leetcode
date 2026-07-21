@@ -6,26 +6,22 @@
 class Solution {
 public:
     int minimumDistance(std::vector<int>& nums) {
-        std::unordered_map<int, std::vector<int>> index_map;
+        std::unordered_map<int, std::vector<int>> pos;
         for (int i = 0; i < nums.size(); ++i) {
-            index_map[nums[i]].push_back(i);
+            pos[nums[i]].push_back(i);
         }
 
-        long long min_dist = LLONG_MAX;
-        bool found = false;
+        int min_dist = INT_MAX;
 
-        for (auto const& [val, indices] : index_map) {
+        for (const auto& [num, indices] : pos) {
             if (indices.size() >= 3) {
-                found = true;
-                for (size_t m = 0; m <= indices.size() - 3; ++m) {
-                    long long current_dist = 2LL * (indices[m + 2] - indices[m]);
-                    if (current_dist < min_dist) {
-                        min_dist = current_dist;
-                    }
+                for (size_t i = 0; i + 2 < indices.size(); ++i) {
+                    int dist = 2 * (indices[i + 2] - indices[i]);
+                    min_dist = std::min(min_dist, dist);
                 }
             }
         }
 
-        return found ? (int)min_dist : -1;
+        return min_dist == INT_MAX ? -1 : min_dist;
     }
 };
