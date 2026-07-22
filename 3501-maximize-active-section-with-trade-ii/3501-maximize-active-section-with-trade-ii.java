@@ -1,159 +1,110 @@
-class SegmentTree {
+class Group {
+  public int start;
+  public int length;
+  public Group(int start, int length) {
+    this.start = start;
+    this.length = length;
+  }
+}
 
-    private int n;
-    private int[] arr;
-    private int[] seg;
+class SparseTable {
+  public SparseTable(int[] nums) {
+    n = nums.length;
+    st = new int[bitLength(n) + 1][n + 1];
+    System.arraycopy(nums, 0, st[0], 0, n);
+    for (int i = 1; i <= st.length; ++i)
+      for (int j = 0; j + (1 << i) <= n; ++j)
+        st[i][j] = Math.max(st[i - 1][j], st[i - 1][j + (1 << (i - 1))]);
+  }
 
-    private void build(int p, int l, int r) {
-        if (l == r) {
-            seg[p] = arr[l];
-            return;
-        }
+  // Returns max(nums[l..r])
+  public int query(int l, int r) {
+    final int i = bitLength(r - l + 1) - 1;
+    return Math.max(st[i][l], st[i][r - (1 << i) + 1]);
+  }
 
-        int mid = (l + r) >> 1;
-        build(p << 1, l, mid);
-        build((p << 1) | 1, mid + 1, r);
-        seg[p] = Math.max(seg[p << 1], seg[(p << 1) | 1]);
-    }
+  private final int n;
+  private final int[][] st; // st[i][j] := max(nums[j..j + 2^i - 1])
 
-    private int _query(int p, int l, int r, int L, int R) {
-        if (L <= l && r <= R) {
-            return seg[p];
-        }
-
-        int mid = (l + r) >> 1;
-        int res = 0;
-        if (L <= mid) {
-            res = Math.max(res, _query(p << 1, l, mid, L, R));
-        }
-        if (R > mid) {
-            res = Math.max(res, _query((p << 1) | 1, mid + 1, r, L, R));
-        }
-
-        return res;
-    }
-
-    public SegmentTree(int[] arr) {
-        this.arr = arr;
-        this.n = arr.length;
-        this.seg = new int[n << 2];
-        build(1, 0, n - 1);
-    }
-
-    public int query(int L, int R) {
-        if (L > R) {
-            return 0;
-        }
-
-        return _query(1, 0, n - 1, L, R);
-    }
+  private int bitLength(int n) {
+    return Integer.SIZE - Integer.numberOfLeadingZeros(n);
+  }
 }
 
 class Solution {
+  public List<Integer> maxActiveSectionsAfterTrade(String s, int[][] queries) {
+    final int n = s.length();
+    final int ones = (int) s.chars().filter(c -> c == '1').count();
+    final Pair<List<Group>, int[]> zeroGroupsInfo = getZeroGroups(s);
+    final List<Group> zeroGroups = zeroGroupsInfo.getKey();
+    final int[] zeroGroupIndex = zeroGroupsInfo.getValue();
 
-    public List<Integer> maxActiveSectionsAfterTrade(
-        String s,
-        int[][] queries
-    ) {
-        int n = s.length();
-        int cnt1 = 0;
-        for (char c : s.toCharArray()) {
-            if (c == '1') {
-                cnt1++;
-            }
-        }
+    if (zeroGroups.isEmpty())
+      return Collections.nCopies(queries.length, ones);
 
-        List<Integer> zeroBlocks = new ArrayList<>();
-        List<Integer> blockLeft = new ArrayList<>();
-        List<Integer> blockRight = new ArrayList<>();
+    final SparseTable st = new SparseTable(getZeroMergeLengths(zeroGroups));
+    final List<Integer> ans = new ArrayList<>();
 
-        int i = 0;
-        while (i < n) {
-            int st = i;
-            while (i < n && s.charAt(i) == s.charAt(st)) {
-                i += 1;
-            }
-            if (s.charAt(st) == '0') {
-                zeroBlocks.add(i - st);
-                blockLeft.add(st);
-                blockRight.add(i - 1);
-            }
-        }
+    for (int[] query : queries) {
+      final int l = query[0];
+      final int r = query[1];
+      final int left = zeroGroupIndex[l] == -1 ? -1
+                                               : (zeroGroups.get(zeroGroupIndex[l]).length -
+                                                  (l - zeroGroups.get(zeroGroupIndex[l]).start));
+      final int right =
+          zeroGroupIndex[r] == -1 ? -1 : (r - zeroGroups.get(zeroGroupIndex[r]).start + 1);
+      final Pair<Integer, Integer> adjacentIndices = mapToAdjacentGroupIndices(
+          zeroGroupIndex[l] + 1, s.charAt(r) == '1' ? zeroGroupIndex[r] : zeroGroupIndex[r] - 1);
+      final int startAdjacentGroupIndex = adjacentIndices.getKey();
+      final int endAdjacentGroupIndex = adjacentIndices.getValue();
 
-        int m = zeroBlocks.size();
-        if (m < 2) {
-            // continuous 0 blocks less than 2 segments, return the answer directly
-            List<Integer> result = new ArrayList<>();
-            for (int q = 0; q < queries.length; q++) {
-                result.add(cnt1);
-            }
-            return result;
-        }
-
-        int[] tmpSum = new int[m - 1];
-        for (int k = 0; k < m - 1; k++) {
-            tmpSum[k] = zeroBlocks.get(k) + zeroBlocks.get(k + 1);
-        }
-        SegmentTree seg = new SegmentTree(tmpSum);
-        List<Integer> ans = new ArrayList<>();
-
-        for (int[] q : queries) {
-            int l = q[0],
-                r = q[1];
-            int idx = lowerBound(blockRight, l);
-            int jdx = upperBound(blockLeft, r) - 1;
-
-            // at most 1 continuous block of 0s within the substring
-            if (idx > m - 1 || jdx < 0 || idx >= jdx) {
-                ans.add(cnt1);
-                continue;
-            }
-            int firstLen =
-                blockRight.get(idx) - Math.max(blockLeft.get(idx), l) + 1; // actual length of the first consecutive block of 0s in the substring
-            int lastLen =
-                Math.min(blockRight.get(jdx), r) - blockLeft.get(jdx) + 1; // actual length of the last consecutive block of 0s in the substring
-            // exactly 2 consecutive 0 blocks within the substring
-            if (idx + 1 == jdx) {
-                int bestGain = firstLen + lastLen;
-                ans.add(cnt1 + bestGain);
-                continue;
-            }
-
-            int val1 = firstLen + zeroBlocks.get(idx + 1);
-            int val2 = zeroBlocks.get(jdx - 1) + lastLen;
-            int val3 = seg.query(idx + 1, jdx - 2);
-            int bestGain = Math.max(Math.max(val1, val2), val3);
-            ans.add(cnt1 + bestGain);
-        }
-
-        return ans;
+      int activeSections = ones;
+      if (s.charAt(l) == '0' && s.charAt(r) == '0' && zeroGroupIndex[l] + 1 == zeroGroupIndex[r])
+        activeSections = Math.max(activeSections, ones + left + right);
+      else if (startAdjacentGroupIndex <= endAdjacentGroupIndex)
+        activeSections = Math.max(activeSections,
+                                  ones + st.query(startAdjacentGroupIndex, endAdjacentGroupIndex));
+      if (s.charAt(l) == '0' &&
+          zeroGroupIndex[l] + 1 <= (s.charAt(r) == '1' ? zeroGroupIndex[r] : zeroGroupIndex[r] - 1))
+        activeSections =
+            Math.max(activeSections, ones + left + zeroGroups.get(zeroGroupIndex[l] + 1).length);
+      if (s.charAt(r) == '0' && zeroGroupIndex[l] < zeroGroupIndex[r] - 1)
+        activeSections =
+            Math.max(activeSections, ones + right + zeroGroups.get(zeroGroupIndex[r] - 1).length);
+      ans.add(activeSections);
     }
 
-    private int lowerBound(List<Integer> list, int target) {
-        int left = 0,
-            right = list.size();
-        while (left < right) {
-            int mid = left + (right - left) / 2;
-            if (list.get(mid) < target) {
-                left = mid + 1;
-            } else {
-                right = mid;
-            }
-        }
-        return left;
+    return ans;
+  }
+
+  // Returns the zero groups and the index of the zero group that contains the i-th character
+  private Pair<List<Group>, int[]> getZeroGroups(String s) {
+    final List<Group> zeroGroups = new ArrayList<>();
+    final int[] zeroGroupIndex = new int[s.length()];
+
+    for (int i = 0; i < s.length(); i++) {
+      if (s.charAt(i) == '0') {
+        if (i > 0 && s.charAt(i - 1) == '0')
+          zeroGroups.get(zeroGroups.size() - 1).length++;
+        else
+          zeroGroups.add(new Group(i, 1));
+      }
+      zeroGroupIndex[i] = zeroGroups.size() - 1;
     }
 
-    private int upperBound(List<Integer> list, int target) {
-        int left = 0,
-            right = list.size();
-        while (left < right) {
-            int mid = left + (right - left) / 2;
-            if (list.get(mid) <= target) {
-                left = mid + 1;
-            } else {
-                right = mid;
-            }
-        }
-        return left;
-    }
+    return new Pair<>(zeroGroups, zeroGroupIndex);
+  }
+
+  // Returns the sums of the lengths of the adjacent groups
+  private int[] getZeroMergeLengths(List<Group> zeroGroups) {
+    final int[] zeroMergeLengths = new int[zeroGroups.size() - 1];
+    for (int i = 0; i < zeroGroups.size() - 1; ++i)
+      zeroMergeLengths[i] = zeroGroups.get(i).length + zeroGroups.get(i + 1).length;
+    return zeroMergeLengths;
+  }
+
+  // Returns the indices of the adjacent groups that contain l and r completely
+  private Pair<Integer, Integer> mapToAdjacentGroupIndices(int startGroupIndex, int endGroupIndex) {
+    return new Pair<>(startGroupIndex, endGroupIndex - 1);
+  }
 }
