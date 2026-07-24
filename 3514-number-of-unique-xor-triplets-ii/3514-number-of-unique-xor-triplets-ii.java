@@ -1,36 +1,35 @@
 class Solution {
+    public static int uniqueXorTriplets(int[] arr) {
+        int n = arr.length;
+        boolean[] freq = new boolean[2048];
+        int len = 0, idx = 0, ans = 0;
 
-    public int uniqueXorTriplets(int[] nums) {
-        int n = nums.length;
-        int m = 0;
-        for (int v : nums) {
-            m = Math.max(m, v);
-        }
-        int u = 1;
-        while (u <= m) {
-            u <<= 1;
-        }
-        boolean[] s = new boolean[u];
         for (int i = 0; i < n; i++) {
             for (int j = i; j < n; j++) {
-                s[nums[i] ^ nums[j]] = true;
+                if (!freq[arr[i] ^ arr[j]])
+                    len++;
+                freq[arr[i] ^ arr[j]] = true;
             }
         }
-        boolean[] t = new boolean[u];
-        for (int x = 0; x < u; x++) {
-            if (!s[x]) {
-                continue;
-            }
-            for (int v : nums) {
-                t[x ^ v] = true;
-            }
+
+        int[] nums = new int[len];
+
+        for (int i = 0; i < 2048; i++)
+            if (freq[i])
+                nums[idx++] = i;
+
+        Arrays.fill(freq, false);
+
+        for (int i = 0; i < len; i++) {
+            for (int j = 0; j < n; j++)
+                freq[nums[i] ^ arr[j]] = true;
         }
-        int ans = 0;
-        for (boolean b : t) {
-            if (b) {
+
+        for (boolean b : freq)
+            if (b)
                 ans++;
-            }
-        }
+
         return ans;
     }
+
 }
