@@ -1,10 +1,6 @@
 class Solution {
     public boolean isHappy(int n) {
-        HashMap<Integer,Integer> hs = new HashMap<>();
-        int index=0;
-        while(n!=1){
-            if(hs.containsKey(n)) return false;
-            hs.put(n,index);
+        while(n!=1 && n!=4){
             int digit = 0;
             while(n>0){
                 int rem = n%10;
@@ -12,8 +8,7 @@ class Solution {
                 digit += rem*rem;
             }
             n = digit;
-            index++;
         }
-        return true;
+        return n==1;
     }
 }
