@@ -9,12 +9,10 @@ class Solution {
                 max2 = max1;
                 max1 = digit;
             }
-            else if(digit >= max2 && digit < max1){
+            else if(digit >= max2){
                 max2 = digit;
             }
         }
-        System.out.println(max1);
-        System.out.println(max2);
         return max1 * max2;
     }
 }
