@@ -5,7 +5,7 @@ class Solution {
         while(n > 0){
             int digit = n%10;
             n/=10;
-            if(digit >= max1){
+            if(digit > max1){
                 max2 = max1;
                 max1 = digit;
             }
