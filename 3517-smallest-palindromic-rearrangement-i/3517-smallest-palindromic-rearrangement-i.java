@@ -1,15 +1,18 @@
 class Solution {
     public String smallestPalindrome(String s) {
-        int len = s.length();
-        int partition = len / 2;
-
-        char[] chars = s.toCharArray();
-        Arrays.sort(chars, 0, partition);
-
-        for (int i = 0; i < partition; i++) {
-            chars[len - 1 - i] = chars[i];
+        int[] c = new int[26];
+        int n = s.length();
+        String middle = (n % 2 == 0) ? "" : String.valueOf(s.charAt(n >> 1));
+        StringBuilder ans = new StringBuilder();
+        n >>= 1;
+        for(int i = 0; i < n; i++){
+            c[s.charAt(i) - 'a']++;
         }
 
-        return new String(chars);
+        for(int i = 0; i < 26; i++){
+            ans.append(String.valueOf((char)(i + 'a')).repeat(c[i]));
+        }
+
+        return ans.toString() + middle + ans.reverse().toString();
     }
 }
