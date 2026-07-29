@@ -1,76 +1,66 @@
 class Solution {
-
-    private long comb(long n, long m, long k) {
-        long res = 1;
-        m = Math.min(m, n - m);
-
-        for (long i = 1; i <= m; i++) {
-            res = (res * (n - i + 1)) / i;
-            if (res > k) {
-                return k + 1;
-            }
-        }
-        return res;
-    }
-
-    private long permutations(int rem, int[] bucket, long k) {
-        long ways = 1;
-        for (int i = 0; i < 26; i++) {
-            if (bucket[i] == 0) {
-                continue;
-            }
-
-            ways *= comb(rem, bucket[i], k);
-            if (ways > k) {
-                break;
-            }
-            rem -= bucket[i];
-        }
-        return ways;
-    }
-
-    public String smallestPalindrome(String s, long k) {
-        int partition = s.length() / 2;
-        int[] bucket = new int[26];
-
-        for (int i = 0; i < partition; i++) {
-            bucket[s.charAt(i) - 97] += 1;
+    public String smallestPalindrome(String s, int k) {
+        int[] freq = new int[26];
+        int n = s.length();
+        int cnt = 0;
+        long totalWays = 1L;
+        for(int i=0;i<n/2;i++){
+            freq[s.charAt(i)-'a']++;
         }
 
-        StringBuilder left = new StringBuilder();
-        long startIndex = 1;
-
-        for (int pos = 0; pos < partition; pos++) {
-            for (int i = 0; i < 26; i++) {
-                if (bucket[i] == 0) {
-                    continue;
+        char[] alpha = {
+            'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
+            'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
+        };
+        StringBuilder sb = new StringBuilder();
+        outer : for(int i=25;i>=0;i--){
+            if(freq[i]==0)continue;
+            int j=1;
+            while(j<=freq[i]){
+                cnt++;
+                totalWays = (totalWays*cnt)/j;
+                if(totalWays>k){
+                    for(int l = 0;l<i;l++){
+                        while(freq[l]>0){
+                            sb.append(alpha[l]);
+                            freq[l]--;
+                        }
+                    }
+                    while(freq[i]>j){
+                        sb.append(alpha[i]);
+                        freq[i]--;
+                    }
+                    break outer;
                 }
-
-                bucket[i] -= 1;
-
-                long ways = permutations(partition - pos - 1, bucket, k);
-                if (startIndex + ways > k) {
-                    left.append((char) (i + 97));
-                    break;
-                }
-
-                bucket[i] += 1;
-                startIndex += ways;
+                j++;
             }
         }
-
-        if (left.length() < partition) {
-            return "";
+        if(k>totalWays)return "";
+        
+        
+        for(int i=0;i<cnt;i++){
+            for(char ch= 'a';ch<='z';ch++){
+                int j = ch-'a';
+                if(freq[j]==0)continue;
+                if(k<=(totalWays*freq[j])/(cnt-i)){
+                   totalWays = (totalWays*freq[j])/(cnt-i);
+                   freq[j]--;
+                   sb.append(ch);
+                   break;
+                }
+                else{
+                    k = (int)(k - (totalWays*freq[j])/(cnt-i));
+                }
+            }
+        }
+        if(n%2==1){
+            sb.append(s.charAt(n/2));
         }
 
-        if (s.length() % 2 != 0) {
-            left.append(s.charAt(partition));
+        for(int i=n/2-1;i>=0;i--){
+            sb.append(sb.charAt(i));
         }
 
-        for (int i = partition - 1; i >= 0; i--) {
-            left.append(left.charAt(i));
-        }
-
-        return left.toString();
+        return sb.toString();
     }
 }
