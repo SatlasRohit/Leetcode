@@ -1,30 +1,30 @@
 class Solution {
     public int minimumPushes(String word) {
 
-        HashMap<Character, Integer> press = new HashMap<>();
+        int[] freq = new int[26];
 
-        // Count frequency
         for (int i = 0; i < word.length(); i++) {
-            char ch = word.charAt(i);
-
-            press.put(ch, press.getOrDefault(ch, 0) + 1);
+            freq[word.charAt(i) - 'a']++;
         }
 
-        // Get frequencies
-        ArrayList<Integer> freq = new ArrayList<>(press.values());
+        Arrays.sort(freq);
 
-        // Sort descending
-        freq.sort(Collections.reverseOrder());
+        int ans = 0;
+        int cnt = 0;
 
-        int pressingTime = 0;
+        for (int i = 25; i >= 0; i--) {
 
-        for (int i = 0; i < freq.size(); i++) {
+            if (freq[i] == 0) {
+                break;
+            }
 
-            int pushes = (i / 8) + 1;
+            int pushes = (cnt / 8) + 1;
 
-            pressingTime += freq.get(i) * pushes;
+            ans += freq[i] * pushes;
+
+            cnt++;
         }
 
-        return pressingTime;
+        return ans;
     }
 }
