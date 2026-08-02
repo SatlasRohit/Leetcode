@@ -4,34 +4,14 @@ class Solution {
         int n = piles.length;
         int alice = 0;
         int bob = 0;
-        int left = 0;
-        int right = n-1;
-        int len = 0;
-        while(len<n){
-            if(len%2 == 0){
-                if(piles[left]>piles[right]){
-                    alice += piles[left];
-                    left++;
-                }
-                else{
-                    alice += piles[right];
-                    right--;
-                }
+        for(int i=0;i<n;i++){
+            if(i%2 ==0){
+                bob +=piles[i];
             }
             else{
-                if(piles[left]>piles[right]){
-                    bob += piles[left];
-                    left++;
-                }
-                else{
-                    bob += piles[right];
-                    right--;
-                }
+                alice +=piles[i];
             }
-            len++;
         }
-        System.out.println(alice);
-        System.out.println(bob);
         return (alice>bob);
     }
 }
