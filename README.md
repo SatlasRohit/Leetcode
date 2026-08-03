@@ -73,6 +73,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1345-jump-game-iv](https://github.com/SatlasRohit/Leetcode/tree/master/1345-jump-game-iv) |
 | [1356-sort-integers-by-the-number-of-1-bits](https://github.com/SatlasRohit/Leetcode/tree/master/1356-sort-integers-by-the-number-of-1-bits) |
 | [1390-four-divisors](https://github.com/SatlasRohit/Leetcode/tree/master/1390-four-divisors) |
+| [1406-stone-game-iii](https://github.com/SatlasRohit/Leetcode/tree/master/1406-stone-game-iii) |
 | [1441-build-an-array-with-stack-operations](https://github.com/SatlasRohit/Leetcode/tree/master/1441-build-an-array-with-stack-operations) |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/SatlasRohit/Leetcode/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
 | [1470-shuffle-the-array](https://github.com/SatlasRohit/Leetcode/tree/master/1470-shuffle-the-array) |
@@ -436,6 +437,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0877-stone-game](https://github.com/SatlasRohit/Leetcode/tree/master/0877-stone-game) |
 | [1344-angle-between-hands-of-a-clock](https://github.com/SatlasRohit/Leetcode/tree/master/1344-angle-between-hands-of-a-clock) |
 | [1390-four-divisors](https://github.com/SatlasRohit/Leetcode/tree/master/1390-four-divisors) |
+| [1406-stone-game-iii](https://github.com/SatlasRohit/Leetcode/tree/master/1406-stone-game-iii) |
 | [1840-maximum-building-height](https://github.com/SatlasRohit/Leetcode/tree/master/1840-maximum-building-height) |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/SatlasRohit/Leetcode/tree/master/1979-find-greatest-common-divisor-of-array) |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/SatlasRohit/Leetcode/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
@@ -527,6 +529,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1143-longest-common-subsequence](https://github.com/SatlasRohit/Leetcode/tree/master/1143-longest-common-subsequence) |
 | [1301-number-of-paths-with-max-score](https://github.com/SatlasRohit/Leetcode/tree/master/1301-number-of-paths-with-max-score) |
 | [1340-jump-game-v](https://github.com/SatlasRohit/Leetcode/tree/master/1340-jump-game-v) |
+| [1406-stone-game-iii](https://github.com/SatlasRohit/Leetcode/tree/master/1406-stone-game-iii) |
 | [1411-number-of-ways-to-paint-n-3-grid](https://github.com/SatlasRohit/Leetcode/tree/master/1411-number-of-ways-to-paint-n-3-grid) |
 | [1594-maximum-non-negative-product-in-a-matrix](https://github.com/SatlasRohit/Leetcode/tree/master/1594-maximum-non-negative-product-in-a-matrix) |
 | [1871-jump-game-vii](https://github.com/SatlasRohit/Leetcode/tree/master/1871-jump-game-vii) |
@@ -757,8 +760,17 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0486-predict-the-winner](https://github.com/SatlasRohit/Leetcode/tree/master/0486-predict-the-winner) |
 | [0877-stone-game](https://github.com/SatlasRohit/Leetcode/tree/master/0877-stone-game) |
+| [1406-stone-game-iii](https://github.com/SatlasRohit/Leetcode/tree/master/1406-stone-game-iii) |
 ## Data Stream
 |  |
 | ------- |
 | [0703-kth-largest-element-in-a-stream](https://github.com/SatlasRohit/Leetcode/tree/master/0703-kth-largest-element-in-a-stream) |
+## Minimax
+|  |
+| ------- |
+| [1406-stone-game-iii](https://github.com/SatlasRohit/Leetcode/tree/master/1406-stone-game-iii) |
+## Zero-Sum Game
+|  |
+| ------- |
+| [1406-stone-game-iii](https://github.com/SatlasRohit/Leetcode/tree/master/1406-stone-game-iii) |
 <!---LeetCode Topics End-->
