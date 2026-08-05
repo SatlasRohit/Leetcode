@@ -1,54 +1,52 @@
 class Solution {
-
     public List<Integer> remainingMethods(int n, int k, int[][] invocations) {
-        List<Integer>[] edges = new ArrayList[n];
+        List<Integer>[] adj = new ArrayList[n];
         for (int i = 0; i < n; i++) {
-            edges[i] = new ArrayList<>();
+            adj[i] = new ArrayList<>();
         }
-        int[] inDegree = new int[n];
-
-        for (int[] inv : invocations) {
-            edges[inv[0]].add(inv[1]);
-            inDegree[inv[1]]++;
+        
+        for (int[] e : invocations) {
+            adj[e[0]].add(e[1]);
         }
-
-        Queue<Integer> queue = new ArrayDeque<>();
-        queue.offer(k);
+        
         boolean[] suspicious = new boolean[n];
+
+        Queue<Integer> q = new LinkedList<>();
+        q.offer(k);
         suspicious[k] = true;
-
-        while (!queue.isEmpty()) {
-            int u = queue.poll();
-            for (int v : edges[u]) {
-                inDegree[v]--;
-
+        
+        while (!q.isEmpty()) {
+            int u = q.poll();
+            
+            for (int v : adj[u]) {
                 if (!suspicious[v]) {
-                    queue.offer(v);
                     suspicious[v] = true;
+                    q.offer(v);
                 }
             }
         }
-
-        boolean canRemoveAll = true;
-        List<Integer> remaining = new ArrayList<>();
-
+        
         for (int i = 0; i < n; i++) {
-            if (suspicious[i] && inDegree[i] > 0) {
-                canRemoveAll = false;
-                break;
-            } else if (!suspicious[i]) {
-                remaining.add(i);
+            if (!suspicious[i]) {
+                for (int v : adj[i]) {
+                    if (suspicious[v]) {
+                        List<Integer> ans = new ArrayList<>();
+                        for (int j = 0; j < n; j++) {
+                            ans.add(j);
+                        }
+                        return ans;
+                    }
+                }
             }
         }
-
-        if (!canRemoveAll) {
-            List<Integer> allNodes = new ArrayList<>(n);
-            for (int i = 0; i < n; i++) {
-                allNodes.add(i);
+        
+        List<Integer> ans = new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+            if (!suspicious[i]) {
+                ans.add(i);
             }
-            return allNodes;
         }
-
-        return remaining;
+        
+        return ans;
     }
 }
