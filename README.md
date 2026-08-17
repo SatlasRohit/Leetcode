@@ -79,6 +79,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1441-build-an-array-with-stack-operations](https://github.com/SatlasRohit/Leetcode/tree/master/1441-build-an-array-with-stack-operations) |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/SatlasRohit/Leetcode/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
 | [1470-shuffle-the-array](https://github.com/SatlasRohit/Leetcode/tree/master/1470-shuffle-the-array) |
+| [1563-stone-game-v](https://github.com/SatlasRohit/Leetcode/tree/master/1563-stone-game-v) |
 | [1582-special-positions-in-a-binary-matrix](https://github.com/SatlasRohit/Leetcode/tree/master/1582-special-positions-in-a-binary-matrix) |
 | [1594-maximum-non-negative-product-in-a-matrix](https://github.com/SatlasRohit/Leetcode/tree/master/1594-maximum-non-negative-product-in-a-matrix) |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/SatlasRohit/Leetcode/tree/master/1665-minimum-initial-energy-to-finish-tasks) |
@@ -467,6 +468,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1390-four-divisors](https://github.com/SatlasRohit/Leetcode/tree/master/1390-four-divisors) |
 | [1406-stone-game-iii](https://github.com/SatlasRohit/Leetcode/tree/master/1406-stone-game-iii) |
 | [1510-stone-game-iv](https://github.com/SatlasRohit/Leetcode/tree/master/1510-stone-game-iv) |
+| [1563-stone-game-v](https://github.com/SatlasRohit/Leetcode/tree/master/1563-stone-game-v) |
 | [1840-maximum-building-height](https://github.com/SatlasRohit/Leetcode/tree/master/1840-maximum-building-height) |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/SatlasRohit/Leetcode/tree/master/1979-find-greatest-common-divisor-of-array) |
 | [2029-stone-game-ix](https://github.com/SatlasRohit/Leetcode/tree/master/2029-stone-game-ix) |
@@ -567,6 +569,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1406-stone-game-iii](https://github.com/SatlasRohit/Leetcode/tree/master/1406-stone-game-iii) |
 | [1411-number-of-ways-to-paint-n-3-grid](https://github.com/SatlasRohit/Leetcode/tree/master/1411-number-of-ways-to-paint-n-3-grid) |
 | [1510-stone-game-iv](https://github.com/SatlasRohit/Leetcode/tree/master/1510-stone-game-iv) |
+| [1563-stone-game-v](https://github.com/SatlasRohit/Leetcode/tree/master/1563-stone-game-v) |
 | [1594-maximum-non-negative-product-in-a-matrix](https://github.com/SatlasRohit/Leetcode/tree/master/1594-maximum-non-negative-product-in-a-matrix) |
 | [1871-jump-game-vii](https://github.com/SatlasRohit/Leetcode/tree/master/1871-jump-game-vii) |
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/SatlasRohit/Leetcode/tree/master/1888-minimum-number-of-flips-to-make-the-binary-string-alternating) |
@@ -811,6 +814,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1140-stone-game-ii](https://github.com/SatlasRohit/Leetcode/tree/master/1140-stone-game-ii) |
 | [1406-stone-game-iii](https://github.com/SatlasRohit/Leetcode/tree/master/1406-stone-game-iii) |
 | [1510-stone-game-iv](https://github.com/SatlasRohit/Leetcode/tree/master/1510-stone-game-iv) |
+| [1563-stone-game-v](https://github.com/SatlasRohit/Leetcode/tree/master/1563-stone-game-v) |
 | [2029-stone-game-ix](https://github.com/SatlasRohit/Leetcode/tree/master/2029-stone-game-ix) |
 ## Data Stream
 |  |
