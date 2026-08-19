@@ -74,6 +74,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1340-jump-game-v](https://github.com/SatlasRohit/Leetcode/tree/master/1340-jump-game-v) |
 | [1345-jump-game-iv](https://github.com/SatlasRohit/Leetcode/tree/master/1345-jump-game-iv) |
 | [1356-sort-integers-by-the-number-of-1-bits](https://github.com/SatlasRohit/Leetcode/tree/master/1356-sort-integers-by-the-number-of-1-bits) |
+| [1386-cinema-seat-allocation](https://github.com/SatlasRohit/Leetcode/tree/master/1386-cinema-seat-allocation) |
 | [1390-four-divisors](https://github.com/SatlasRohit/Leetcode/tree/master/1390-four-divisors) |
 | [1406-stone-game-iii](https://github.com/SatlasRohit/Leetcode/tree/master/1406-stone-game-iii) |
 | [1441-build-an-array-with-stack-operations](https://github.com/SatlasRohit/Leetcode/tree/master/1441-build-an-array-with-stack-operations) |
@@ -253,6 +254,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0011-container-with-most-water](https://github.com/SatlasRohit/Leetcode/tree/master/0011-container-with-most-water) |
 | [0561-array-partition](https://github.com/SatlasRohit/Leetcode/tree/master/0561-array-partition) |
+| [1386-cinema-seat-allocation](https://github.com/SatlasRohit/Leetcode/tree/master/1386-cinema-seat-allocation) |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/SatlasRohit/Leetcode/tree/master/1665-minimum-initial-energy-to-finish-tasks) |
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/SatlasRohit/Leetcode/tree/master/1846-maximum-element-after-decreasing-and-rearranging) |
 | [2029-stone-game-ix](https://github.com/SatlasRohit/Leetcode/tree/master/2029-stone-game-ix) |
@@ -348,6 +350,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1331-rank-transform-of-an-array](https://github.com/SatlasRohit/Leetcode/tree/master/1331-rank-transform-of-an-array) |
 | [1345-jump-game-iv](https://github.com/SatlasRohit/Leetcode/tree/master/1345-jump-game-iv) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/SatlasRohit/Leetcode/tree/master/1358-number-of-substrings-containing-all-three-characters) |
+| [1386-cinema-seat-allocation](https://github.com/SatlasRohit/Leetcode/tree/master/1386-cinema-seat-allocation) |
 | [1461-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/SatlasRohit/Leetcode/tree/master/1461-check-if-a-string-contains-all-binary-codes-of-size-k) |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/SatlasRohit/Leetcode/tree/master/1674-minimum-moves-to-make-array-complementary) |
 | [1935-maximum-number-of-words-you-can-type](https://github.com/SatlasRohit/Leetcode/tree/master/1935-maximum-number-of-words-you-can-type) |
@@ -523,6 +526,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0868-binary-gap](https://github.com/SatlasRohit/Leetcode/tree/master/0868-binary-gap) |
 | [1009-complement-of-base-10-integer](https://github.com/SatlasRohit/Leetcode/tree/master/1009-complement-of-base-10-integer) |
 | [1356-sort-integers-by-the-number-of-1-bits](https://github.com/SatlasRohit/Leetcode/tree/master/1356-sort-integers-by-the-number-of-1-bits) |
+| [1386-cinema-seat-allocation](https://github.com/SatlasRohit/Leetcode/tree/master/1386-cinema-seat-allocation) |
 | [1461-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/SatlasRohit/Leetcode/tree/master/1461-check-if-a-string-contains-all-binary-codes-of-size-k) |
 | [3513-number-of-unique-xor-triplets-i](https://github.com/SatlasRohit/Leetcode/tree/master/3513-number-of-unique-xor-triplets-i) |
 | [3514-number-of-unique-xor-triplets-ii](https://github.com/SatlasRohit/Leetcode/tree/master/3514-number-of-unique-xor-triplets-ii) |
