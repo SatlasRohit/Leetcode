@@ -96,6 +96,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1929-concatenation-of-array](https://github.com/SatlasRohit/Leetcode/tree/master/1929-concatenation-of-array) |
 | [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/SatlasRohit/Leetcode/tree/master/1967-number-of-strings-that-appear-as-substrings-in-word) |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/SatlasRohit/Leetcode/tree/master/1979-find-greatest-common-divisor-of-array) |
+| [1985-find-the-kth-largest-integer-in-the-array](https://github.com/SatlasRohit/Leetcode/tree/master/1985-find-the-kth-largest-integer-in-the-array) |
 | [2029-stone-game-ix](https://github.com/SatlasRohit/Leetcode/tree/master/2029-stone-game-ix) |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/SatlasRohit/Leetcode/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
 | [2099-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/SatlasRohit/Leetcode/tree/master/2099-find-subsequence-of-length-k-with-the-largest-sum) |
@@ -218,6 +219,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/SatlasRohit/Leetcode/tree/master/1888-minimum-number-of-flips-to-make-the-binary-string-alternating) |
 | [1935-maximum-number-of-words-you-can-type](https://github.com/SatlasRohit/Leetcode/tree/master/1935-maximum-number-of-words-you-can-type) |
 | [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/SatlasRohit/Leetcode/tree/master/1967-number-of-strings-that-appear-as-substrings-in-word) |
+| [1985-find-the-kth-largest-integer-in-the-array](https://github.com/SatlasRohit/Leetcode/tree/master/1985-find-the-kth-largest-integer-in-the-array) |
 | [2213-longest-substring-of-one-repeating-character](https://github.com/SatlasRohit/Leetcode/tree/master/2213-longest-substring-of-one-repeating-character) |
 | [2833-furthest-point-from-origin](https://github.com/SatlasRohit/Leetcode/tree/master/2833-furthest-point-from-origin) |
 | [2839-check-if-strings-can-be-made-equal-with-operations-i](https://github.com/SatlasRohit/Leetcode/tree/master/2839-check-if-strings-can-be-made-equal-with-operations-i) |
@@ -299,6 +301,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/SatlasRohit/Leetcode/tree/master/1665-minimum-initial-energy-to-finish-tasks) |
 | [1840-maximum-building-height](https://github.com/SatlasRohit/Leetcode/tree/master/1840-maximum-building-height) |
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/SatlasRohit/Leetcode/tree/master/1846-maximum-element-after-decreasing-and-rearranging) |
+| [1985-find-the-kth-largest-integer-in-the-array](https://github.com/SatlasRohit/Leetcode/tree/master/1985-find-the-kth-largest-integer-in-the-array) |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/SatlasRohit/Leetcode/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
 | [2099-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/SatlasRohit/Leetcode/tree/master/2099-find-subsequence-of-length-k-with-the-largest-sum) |
 | [2126-destroying-asteroids](https://github.com/SatlasRohit/Leetcode/tree/master/2126-destroying-asteroids) |
@@ -443,6 +446,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0703-kth-largest-element-in-a-stream](https://github.com/SatlasRohit/Leetcode/tree/master/0703-kth-largest-element-in-a-stream) |
 | [1046-last-stone-weight](https://github.com/SatlasRohit/Leetcode/tree/master/1046-last-stone-weight) |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/SatlasRohit/Leetcode/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
+| [1985-find-the-kth-largest-integer-in-the-array](https://github.com/SatlasRohit/Leetcode/tree/master/1985-find-the-kth-largest-integer-in-the-array) |
 | [2099-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/SatlasRohit/Leetcode/tree/master/2099-find-subsequence-of-length-k-with-the-largest-sum) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/SatlasRohit/Leetcode/tree/master/2812-find-the-safest-path-in-a-grid) |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/SatlasRohit/Leetcode/tree/master/3286-find-a-safe-walk-through-a-grid) |
@@ -513,6 +517,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0215-kth-largest-element-in-an-array](https://github.com/SatlasRohit/Leetcode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0347-top-k-frequent-elements](https://github.com/SatlasRohit/Leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0761-special-binary-string](https://github.com/SatlasRohit/Leetcode/tree/master/0761-special-binary-string) |
+| [1985-find-the-kth-largest-integer-in-the-array](https://github.com/SatlasRohit/Leetcode/tree/master/1985-find-the-kth-largest-integer-in-the-array) |
 | [3653-xor-after-range-multiplication-queries-i](https://github.com/SatlasRohit/Leetcode/tree/master/3653-xor-after-range-multiplication-queries-i) |
 | [3655-xor-after-range-multiplication-queries-ii](https://github.com/SatlasRohit/Leetcode/tree/master/3655-xor-after-range-multiplication-queries-ii) |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/SatlasRohit/Leetcode/tree/master/3737-count-subarrays-with-majority-element-i) |
@@ -761,6 +766,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/SatlasRohit/Leetcode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0347-top-k-frequent-elements](https://github.com/SatlasRohit/Leetcode/tree/master/0347-top-k-frequent-elements) |
+| [1985-find-the-kth-largest-integer-in-the-array](https://github.com/SatlasRohit/Leetcode/tree/master/1985-find-the-kth-largest-integer-in-the-array) |
 ## Monotonic Stack
 |  |
 | ------- |
