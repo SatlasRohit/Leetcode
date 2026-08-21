@@ -9,9 +9,8 @@ class Solution {
                 if(nums1[i] == nums2[j]) break;
                 j++;
             }
-            if(j == len2-1){
+            if(res[i] == 0){
                 res[i] = -1;
-                continue;
             }
             for(int k=j;k<len2;k++){
                 if(nums2[k]>nums1[i]){
