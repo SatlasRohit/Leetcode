@@ -252,6 +252,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0225-implement-stack-using-queues](https://github.com/SatlasRohit/Leetcode/tree/master/0225-implement-stack-using-queues) |
 | [0496-next-greater-element-i](https://github.com/SatlasRohit/Leetcode/tree/master/0496-next-greater-element-i) |
 | [0636-exclusive-time-of-functions](https://github.com/SatlasRohit/Leetcode/tree/master/0636-exclusive-time-of-functions) |
+| [0901-online-stock-span](https://github.com/SatlasRohit/Leetcode/tree/master/0901-online-stock-span) |
 | [1441-build-an-array-with-stack-operations](https://github.com/SatlasRohit/Leetcode/tree/master/1441-build-an-array-with-stack-operations) |
 | [2130-maximum-twin-sum-of-a-linked-list](https://github.com/SatlasRohit/Leetcode/tree/master/2130-maximum-twin-sum-of-a-linked-list) |
 | [2751-robot-collisions](https://github.com/SatlasRohit/Leetcode/tree/master/2751-robot-collisions) |
@@ -388,6 +389,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0225-implement-stack-using-queues](https://github.com/SatlasRohit/Leetcode/tree/master/0225-implement-stack-using-queues) |
 | [0303-range-sum-query-immutable](https://github.com/SatlasRohit/Leetcode/tree/master/0303-range-sum-query-immutable) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/SatlasRohit/Leetcode/tree/master/0703-kth-largest-element-in-a-stream) |
+| [0901-online-stock-span](https://github.com/SatlasRohit/Leetcode/tree/master/0901-online-stock-span) |
 ## Queue
 |  |
 | ------- |
@@ -776,6 +778,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0042-trapping-rain-water](https://github.com/SatlasRohit/Leetcode/tree/master/0042-trapping-rain-water) |
 | [0496-next-greater-element-i](https://github.com/SatlasRohit/Leetcode/tree/master/0496-next-greater-element-i) |
+| [0901-online-stock-span](https://github.com/SatlasRohit/Leetcode/tree/master/0901-online-stock-span) |
 ## Binary Indexed Tree
 |  |
 | ------- |
@@ -839,6 +842,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0703-kth-largest-element-in-a-stream](https://github.com/SatlasRohit/Leetcode/tree/master/0703-kth-largest-element-in-a-stream) |
+| [0901-online-stock-span](https://github.com/SatlasRohit/Leetcode/tree/master/0901-online-stock-span) |
 ## Minimax
 |  |
 | ------- |
