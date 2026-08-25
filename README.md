@@ -147,6 +147,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3689-maximum-total-subarray-value-i](https://github.com/SatlasRohit/Leetcode/tree/master/3689-maximum-total-subarray-value-i) |
 | [3691-maximum-total-subarray-value-ii](https://github.com/SatlasRohit/Leetcode/tree/master/3691-maximum-total-subarray-value-ii) |
 | [3702-longest-subsequence-with-non-zero-bitwise-xor](https://github.com/SatlasRohit/Leetcode/tree/master/3702-longest-subsequence-with-non-zero-bitwise-xor) |
+| [3718-smallest-missing-multiple-of-k](https://github.com/SatlasRohit/Leetcode/tree/master/3718-smallest-missing-multiple-of-k) |
 | [3731-find-missing-elements](https://github.com/SatlasRohit/Leetcode/tree/master/3731-find-missing-elements) |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/SatlasRohit/Leetcode/tree/master/3737-count-subarrays-with-majority-element-i) |
 | [3739-count-subarrays-with-majority-element-ii](https://github.com/SatlasRohit/Leetcode/tree/master/3739-count-subarrays-with-majority-element-ii) |
@@ -384,6 +385,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3518-smallest-palindromic-rearrangement-ii](https://github.com/SatlasRohit/Leetcode/tree/master/3518-smallest-palindromic-rearrangement-ii) |
 | [3532-path-existence-queries-in-a-graph-i](https://github.com/SatlasRohit/Leetcode/tree/master/3532-path-existence-queries-in-a-graph-i) |
 | [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/SatlasRohit/Leetcode/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
+| [3718-smallest-missing-multiple-of-k](https://github.com/SatlasRohit/Leetcode/tree/master/3718-smallest-missing-multiple-of-k) |
 | [3731-find-missing-elements](https://github.com/SatlasRohit/Leetcode/tree/master/3731-find-missing-elements) |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/SatlasRohit/Leetcode/tree/master/3737-count-subarrays-with-majority-element-i) |
 | [3739-count-subarrays-with-majority-element-ii](https://github.com/SatlasRohit/Leetcode/tree/master/3739-count-subarrays-with-majority-element-ii) |
