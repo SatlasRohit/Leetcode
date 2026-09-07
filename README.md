@@ -495,6 +495,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0396-rotate-function](https://github.com/SatlasRohit/Leetcode/tree/master/0396-rotate-function) |
 | [0441-arranging-coins](https://github.com/SatlasRohit/Leetcode/tree/master/0441-arranging-coins) |
 | [0486-predict-the-winner](https://github.com/SatlasRohit/Leetcode/tree/master/0486-predict-the-winner) |
+| [0507-perfect-number](https://github.com/SatlasRohit/Leetcode/tree/master/0507-perfect-number) |
 | [0509-fibonacci-number](https://github.com/SatlasRohit/Leetcode/tree/master/0509-fibonacci-number) |
 | [0628-maximum-product-of-three-numbers](https://github.com/SatlasRohit/Leetcode/tree/master/0628-maximum-product-of-three-numbers) |
 | [0762-prime-number-of-set-bits-in-binary-representation](https://github.com/SatlasRohit/Leetcode/tree/master/0762-prime-number-of-set-bits-in-binary-representation) |
