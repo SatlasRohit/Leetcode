@@ -166,6 +166,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/SatlasRohit/Leetcode/tree/master/3740-minimum-distance-between-three-equal-elements-i) |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/SatlasRohit/Leetcode/tree/master/3867-sum-of-gcd-of-formed-pairs) |
 | [3876-construct-uniform-parity-array-ii](https://github.com/SatlasRohit/Leetcode/tree/master/3876-construct-uniform-parity-array-ii) |
+| [3882-minimum-xor-path-in-a-grid](https://github.com/SatlasRohit/Leetcode/tree/master/3882-minimum-xor-path-in-a-grid) |
 ## Simulation
 |  |
 | ------- |
@@ -600,6 +601,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3568-minimum-moves-to-clean-the-classroom](https://github.com/SatlasRohit/Leetcode/tree/master/3568-minimum-moves-to-clean-the-classroom) |
 | [3644-maximum-k-to-sort-a-permutation](https://github.com/SatlasRohit/Leetcode/tree/master/3644-maximum-k-to-sort-a-permutation) |
 | [3702-longest-subsequence-with-non-zero-bitwise-xor](https://github.com/SatlasRohit/Leetcode/tree/master/3702-longest-subsequence-with-non-zero-bitwise-xor) |
+| [3882-minimum-xor-path-in-a-grid](https://github.com/SatlasRohit/Leetcode/tree/master/3882-minimum-xor-path-in-a-grid) |
 ## Matrix
 |  |
 | ------- |
@@ -621,6 +623,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3418-maximum-amount-of-money-robot-can-earn](https://github.com/SatlasRohit/Leetcode/tree/master/3418-maximum-amount-of-money-robot-can-earn) |
 | [3546-equal-sum-grid-partition-i](https://github.com/SatlasRohit/Leetcode/tree/master/3546-equal-sum-grid-partition-i) |
 | [3568-minimum-moves-to-clean-the-classroom](https://github.com/SatlasRohit/Leetcode/tree/master/3568-minimum-moves-to-clean-the-classroom) |
+| [3882-minimum-xor-path-in-a-grid](https://github.com/SatlasRohit/Leetcode/tree/master/3882-minimum-xor-path-in-a-grid) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -662,6 +665,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3700-number-of-zigzag-arrays-ii](https://github.com/SatlasRohit/Leetcode/tree/master/3700-number-of-zigzag-arrays-ii) |
 | [3751-total-waviness-of-numbers-in-range-i](https://github.com/SatlasRohit/Leetcode/tree/master/3751-total-waviness-of-numbers-in-range-i) |
 | [3753-total-waviness-of-numbers-in-range-ii](https://github.com/SatlasRohit/Leetcode/tree/master/3753-total-waviness-of-numbers-in-range-ii) |
+| [3882-minimum-xor-path-in-a-grid](https://github.com/SatlasRohit/Leetcode/tree/master/3882-minimum-xor-path-in-a-grid) |
 ## Doubly-Linked List
 |  |
 | ------- |
