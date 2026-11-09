@@ -1,16 +1,22 @@
 class Solution {
     public int singleNonDuplicate(int[] nums) {
+        int low = 0;
+        int high = nums.length - 1;
 
-        int n = nums.length;
-        if(n < 2) return nums[0];
-        int low = 0,high = n - 1;
-        HashSet<Integer> set = new HashSet<>();
-        while(low <= high){
-            if(nums[low + 1] == nums[low]) low+=2;
-            else return nums[low];
-            if(nums[high - 1] == nums[high]) high -=2;
-            else return nums[high];
+        while (low < high) {
+            int mid = low + (high - low) / 2;
+
+            if (mid % 2 == 1) {
+                mid--;
+            }
+
+            if (nums[mid] == nums[mid + 1]) {
+                low = mid + 2;
+            } else {
+                high = mid;
+            }
         }
-        return -1;
+
+        return nums[low];
     }
 }
