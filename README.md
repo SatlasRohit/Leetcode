@@ -137,6 +137,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2996-smallest-missing-integer-greater-than-sequential-prefix-sum](https://github.com/SatlasRohit/Leetcode/tree/master/2996-smallest-missing-integer-greater-than-sequential-prefix-sum) |
 | [3069-distribute-elements-into-two-arrays-i](https://github.com/SatlasRohit/Leetcode/tree/master/3069-distribute-elements-into-two-arrays-i) |
 | [3093-longest-common-suffix-queries](https://github.com/SatlasRohit/Leetcode/tree/master/3093-longest-common-suffix-queries) |
+| [3105-longest-strictly-increasing-or-strictly-decreasing-subarray](https://github.com/SatlasRohit/Leetcode/tree/master/3105-longest-strictly-increasing-or-strictly-decreasing-subarray) |
 | [3161-block-placement-queries](https://github.com/SatlasRohit/Leetcode/tree/master/3161-block-placement-queries) |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/SatlasRohit/Leetcode/tree/master/3286-find-a-safe-walk-through-a-grid) |
 | [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/SatlasRohit/Leetcode/tree/master/3300-minimum-element-after-replacement-with-digit-sum) |
