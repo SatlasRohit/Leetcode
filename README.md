@@ -92,6 +92,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1441-build-an-array-with-stack-operations](https://github.com/SatlasRohit/Leetcode/tree/master/1441-build-an-array-with-stack-operations) |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/SatlasRohit/Leetcode/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
 | [1470-shuffle-the-array](https://github.com/SatlasRohit/Leetcode/tree/master/1470-shuffle-the-array) |
+| [1524-number-of-sub-arrays-with-odd-sum](https://github.com/SatlasRohit/Leetcode/tree/master/1524-number-of-sub-arrays-with-odd-sum) |
 | [1563-stone-game-v](https://github.com/SatlasRohit/Leetcode/tree/master/1563-stone-game-v) |
 | [1582-special-positions-in-a-binary-matrix](https://github.com/SatlasRohit/Leetcode/tree/master/1582-special-positions-in-a-binary-matrix) |
 | [1594-maximum-non-negative-product-in-a-matrix](https://github.com/SatlasRohit/Leetcode/tree/master/1594-maximum-non-negative-product-in-a-matrix) |
@@ -550,6 +551,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1390-four-divisors](https://github.com/SatlasRohit/Leetcode/tree/master/1390-four-divisors) |
 | [1406-stone-game-iii](https://github.com/SatlasRohit/Leetcode/tree/master/1406-stone-game-iii) |
 | [1510-stone-game-iv](https://github.com/SatlasRohit/Leetcode/tree/master/1510-stone-game-iv) |
+| [1524-number-of-sub-arrays-with-odd-sum](https://github.com/SatlasRohit/Leetcode/tree/master/1524-number-of-sub-arrays-with-odd-sum) |
 | [1563-stone-game-v](https://github.com/SatlasRohit/Leetcode/tree/master/1563-stone-game-v) |
 | [1840-maximum-building-height](https://github.com/SatlasRohit/Leetcode/tree/master/1840-maximum-building-height) |
 | [1872-stone-game-viii](https://github.com/SatlasRohit/Leetcode/tree/master/1872-stone-game-viii) |
@@ -671,6 +673,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1406-stone-game-iii](https://github.com/SatlasRohit/Leetcode/tree/master/1406-stone-game-iii) |
 | [1411-number-of-ways-to-paint-n-3-grid](https://github.com/SatlasRohit/Leetcode/tree/master/1411-number-of-ways-to-paint-n-3-grid) |
 | [1510-stone-game-iv](https://github.com/SatlasRohit/Leetcode/tree/master/1510-stone-game-iv) |
+| [1524-number-of-sub-arrays-with-odd-sum](https://github.com/SatlasRohit/Leetcode/tree/master/1524-number-of-sub-arrays-with-odd-sum) |
 | [1563-stone-game-v](https://github.com/SatlasRohit/Leetcode/tree/master/1563-stone-game-v) |
 | [1594-maximum-non-negative-product-in-a-matrix](https://github.com/SatlasRohit/Leetcode/tree/master/1594-maximum-non-negative-product-in-a-matrix) |
 | [1871-jump-game-vii](https://github.com/SatlasRohit/Leetcode/tree/master/1871-jump-game-vii) |
@@ -832,6 +835,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0303-range-sum-query-immutable](https://github.com/SatlasRohit/Leetcode/tree/master/0303-range-sum-query-immutable) |
 | [0560-subarray-sum-equals-k](https://github.com/SatlasRohit/Leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [1140-stone-game-ii](https://github.com/SatlasRohit/Leetcode/tree/master/1140-stone-game-ii) |
+| [1524-number-of-sub-arrays-with-odd-sum](https://github.com/SatlasRohit/Leetcode/tree/master/1524-number-of-sub-arrays-with-odd-sum) |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/SatlasRohit/Leetcode/tree/master/1674-minimum-moves-to-make-array-complementary) |
 | [1732-find-the-highest-altitude](https://github.com/SatlasRohit/Leetcode/tree/master/1732-find-the-highest-altitude) |
 | [1838-frequency-of-the-most-frequent-element](https://github.com/SatlasRohit/Leetcode/tree/master/1838-frequency-of-the-most-frequent-element) |
